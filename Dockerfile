@@ -28,7 +28,7 @@ FROM        node
 LABEL       maintainer="Torben Sickert <info@torben.website>"
 LABEL       Description="base" Vendor="thaibault products" Version="1.0"
 RUN         mkdir --parents /application
-COPY        ./ /application
+COPY        . /application
 EXPOSE      8080
 WORKDIR     /application
 CMD         npm run start
