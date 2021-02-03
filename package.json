@@ -16,9 +16,21 @@
   "keywords": [
     "polyfill"
   ],
+  "files": [
+    "index.ts"
+  ],
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/thaibault/on-premise-polyfill.io"
+  },
+  "scripts": {
+    "build": "babel --plugins @babel/plugin-transform-runtime --presets @babel/preset-env,@babel/preset-typescript --source-maps inline --out-file index.js index.ts",
+    "clear": "rimraf *.js",
+    "serve": "index.js",
+    "start": "yarn serve",
+    "update": "yarn version --patch && yarn publish",
+    "update:documentation": "documentationWebsite --log-level info"
   },
   "devDependencies": {
     "@babel/cli": "*",
@@ -33,9 +45,5 @@
   "dependencies": {
     "clientnode": "*",
     "polyfill-library": "*"
-  },
-  "scripts": {
-    "build": "babel --plugins @babel/plugin-transform-runtime --presets @babel/preset-env,@babel/preset-typescript --source-maps inline --out-file polyfill.io.js polyfill.io.ts",
-    "clear": "rimraf polyfill.io.js"
   }
 }
