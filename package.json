@@ -25,7 +25,7 @@
     "url": "https://github.com/thaibault/on-premise-polyfill.io"
   },
   "scripts": {
-    "build": "babel --plugins @babel/plugin-transform-runtime --presets @babel/preset-env,@babel/preset-typescript --source-maps inline --out-file index.js index.ts",
+    "build": "babel --plugins @babel/plugin-transform-runtime --presets @babel/preset-env,@babel/preset-typescript --source-maps inline --out-file index.js index.ts && sed --in-place --regexp-extended 's:^// *(#![^ ]+ ).*$:\\1node:' index.js && chmod +x index.js",
     "clear": "rimraf *.js",
     "serve": "index.js",
     "start": "yarn serve",
@@ -35,6 +35,7 @@
   "devDependencies": {
     "@babel/cli": "*",
     "@babel/core": "*",
+    "@babel/plugin-transform-runtime": "*",
     "@babel/preset-env": "*",
     "@babel/preset-typescript": "*",
     "@babel/runtime": "*",
