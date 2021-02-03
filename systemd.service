@@ -1,0 +1,31 @@
+# -*- coding: utf-8 -*-
+# region header
+# Copyright Torben Sickert (info["~at~"]torben.website) 16.12.2012
+
+# License
+# -------
+
+# This library written by Torben Sickert stand under a creative commons naming
+# 3.0 unported license. See https://creativecommons.org/licenses/by/3.0/deed.de
+# endregion
+[Unit]
+Description=On premise polyfill.io service.
+After=docker.service
+BindsTo=docker.service
+Conflicts=shutdown.target reboot.target halt.target
+
+[Service]
+ExecStart=/usr/bin/env docker run --interactive --name polyfill.io -p 0.0.0.0:8080:8080 --rm --tty tsickert/on-premise-polyfill.io
+NotifyAccess=all
+# NOTE: Will be handled by docker.
+Restart=always
+RestartSec=10
+User=root
+WorkingDirectory=/root/application
+
+[Install]
+WantedBy=multi-user.target
+# region vim modline
+# vim: set tabstop=4 shiftwidth=4 expandtab:
+# vim: foldmethod=marker foldmarker=region,endregion:
+# endregion
