@@ -26,13 +26,14 @@
 # podman / docker run --interactive --name polyfill.io -p 0.0.0.0:8080:8080 --rm --tty tsickert/on-premise-polyfill.io
 # endregion
 FROM        node
+ENV         POLYFILL_PORT 8080
 LABEL       maintainer="Torben Sickert <info@torben.website>"
 LABEL       Description="base" Vendor="thaibault products" Version="1.0"
 RUN         mkdir --parents /application
 COPY        . /application
 WORKDIR     /application
 RUN         npm run build
-EXPOSE      8080
+EXPOSE      $POLYFILL_PORT
 CMD         npm run start
 # region modline
 # vim: set tabstop=4 shiftwidth=4 expandtab filetype=dockerfile:
