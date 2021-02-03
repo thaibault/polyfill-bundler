@@ -3,7 +3,7 @@
 /** @module polyfill.io */
 'use strict'
 // region import
-import Tools from 'clientnode'
+import Tools, {CloseEventNames} from 'clientnode'
 import {Mapping} from 'clientnode/type'
 import {
     // createServer,
@@ -106,11 +106,12 @@ console.info(`Listen on port ${port} for incoming requests.`)
 
 instance.listen(port)
 
-process.on('SIGINT', ():void => {
-    console.info('\nCaught interrupt signal: stopping server.')
+for (const name of CloseEventNames)
+    process.on(name, ():void => {
+        console.info(`\nGot "${name}" signal: stopping server.`)
 
-    instance.close(():void => console.info('Server stopped.'))
-})
+        instance.close(():void => console.info('Server stopped.'))
+    })
 // region vim modline
 // vim: set tabstop=4 shiftwidth=4 expandtab:
 // vim: foldmethod=marker foldmarker=region,endregion:
