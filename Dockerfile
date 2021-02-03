@@ -29,8 +29,9 @@ LABEL       maintainer="Torben Sickert <info@torben.website>"
 LABEL       Description="base" Vendor="thaibault products" Version="1.0"
 RUN         mkdir --parents /application
 COPY        . /application
-EXPOSE      8080
 WORKDIR     /application
+RUN         npm run build
+EXPOSE      8080
 CMD         npm run start
 # region modline
 # vim: set tabstop=4 shiftwidth=4 expandtab filetype=dockerfile:
