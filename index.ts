@@ -1,6 +1,6 @@
 // #!/usr/bin/env babel-node
 // -*- coding: utf-8 -*-
-/** @module polyfill.io */
+/** @module index */
 'use strict'
 // region import
 import Tools, {CloseEventNames} from 'clientnode'
