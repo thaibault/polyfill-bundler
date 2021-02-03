@@ -1,0 +1,41 @@
+{
+  "name": "on-premise-polyfill.io",
+  "version": "1.0.0",
+  "license": "CC-BY-3.0",
+  "description": "On-premise polyfill.io service.",
+  "homepage": "https://torben.website/on-premise-polyfill.io service.",
+  "documentationWebsite": {
+    "languages": [
+      "deDE",
+      "enUS"
+    ],
+    "name": "on-premise-polyfill.io",
+    "tagline": "",
+    "trackingCode": ""
+  },
+  "keywords": [
+    "polyfill"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thaibault/on-premise-polyfill.io"
+  },
+  "devDependencies": {
+    "@babel/cli": "*",
+    "@babel/core": "*",
+    "@babel/preset-env": "*",
+    "@babel/preset-typescript": "*",
+    "@babel/runtime": "*",
+    "@types/rimraf": "*",
+    "documentation-website": "*",
+    "rimraf": "*"
+  },
+  "dependencies": {
+    "clientnode": "*",
+    "polyfill-library": "*"
+  },
+  "scripts": {
+    "build": "babel --plugins @babel/plugin-transform-runtime --presets @babel/preset-env,@babel/preset-typescript --source-maps inline --out-file polyfill.io.js polyfill.io.ts",
+    "clear": "rimraf polyfill.io.js"
+  }
+}
