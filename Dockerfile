@@ -13,6 +13,7 @@
 # Basic ArchLinux with user-mapping, AUR integration and support for decryption
 # of security related files.
 # endregion
+# region create commands
 # Run the following command in the directory where this file lives to build a
 # new docker image:
 # - podman pull node && podman build --file Dockerfile --no-cache --tag docker.pkg.github.com/thaibault/on-premise-polyfill.io/base .
