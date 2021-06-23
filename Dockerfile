@@ -27,6 +27,7 @@
 # endregion
 FROM        node
 ENV         POLYFILL_PORT 8080
+ENV         NODE_ENV production
 LABEL       maintainer="Torben Sickert <info@torben.website>"
 LABEL       Description="base" Vendor="thaibault products" Version="1.0"
 RUN         mkdir --parents /application
