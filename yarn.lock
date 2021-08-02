@@ -1057,6 +1057,7 @@
 
 "@types/webpack@https://registry.yarnpkg.com/@favware/skip-dependency/-/skip-dependency-1.1.0.tgz":
   version "1.1.0"
+  uid "7ff0adb2a0e32b1a0a48f432cf31c16b53f7f4ea"
   resolved "https://registry.yarnpkg.com/@favware/skip-dependency/-/skip-dependency-1.1.0.tgz#7ff0adb2a0e32b1a0a48f432cf31c16b53f7f4ea"
 
 "@webcomponents/template@^1.4.0":
@@ -1339,7 +1340,7 @@ cldr-core@38:
   resolved "https://registry.yarnpkg.com/cldr-core/-/cldr-core-38.1.0.tgz#3c400436b89110e2c0584469d51b7479ef0fa70c"
   integrity sha512-Da9xKjDp4qGGIX0VDsBqTan09iR5nuYD2a/KkfEaUyqKhu6wFVNRiCpPDXeRbpVwPBY6PgemV8WiHatMhcpy4A==
 
-clientnode@*:
+clientnode@^3.0.755:
   version "3.0.755"
   resolved "https://registry.yarnpkg.com/clientnode/-/clientnode-3.0.755.tgz#10330cce4fadfe4d401616fc857441103514bff7"
   integrity sha512-Q4+lg4lGdJ6RYtvY0AP3l20eh+53jVyzBpL/Dtydiw51/xp6En4xaLqJqXttgqZ1wehKwRdUbH6JMAfqYM4nqg==
