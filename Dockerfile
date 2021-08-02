@@ -16,10 +16,11 @@
 # region create commands
 # Run the following command in the directory where this file lives to build a
 # new docker image:
-# - podman pull node && podman build --file Dockerfile --no-cache --tag docker.pkg.github.com/thaibault/on-premise-polyfill.io/base .
-# - docker pull node && docker build --no-cache --tag tsickert/on-premise-polyfill.io:latest ./
-# - podman push docker.pkg.github.com/thaibault/on-premise-polyfill.io/base:latest --creds "thaibault:$(cat "${ILU_CONFIGURATION_PATH}web/github/masterToken.txt")"
-# - docker push tsickert/on-premise-polyfill.io
+# - podman pull node && podman build --file https://raw.githubusercontent.com/thaibault/on-premise-polyfill.io/master/Dockerfile --no-cache --tag ghcr.io/thaibault/on-premise-polyfill.io .
+# - podman push ghcr.io/thaibault/on-premise-polyfill.io:latest --creds "thaibault:$(cat "${ILU_CONFIGURATION_PATH}web/github/masterToken.txt")"
+
+# - docker pull node && docker build --no-cache --tag ghcr.io/thaibault/on-premise-polyfill.io:latest ./
+# - cat "${ILU_CONFIGURATION_PATH}web/github/masterToken.txt" | docker login ghcr.io --username thaibault --password-stdin && docker push ghcr.io/thaibault/on-premise-polyfill.io:latest
 # endregion
 # region start container commands
 # Run the following command in the directory where this file lives to start:
