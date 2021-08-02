@@ -16,8 +16,8 @@ Conflicts=shutdown.target reboot.target halt.target
 
 [Service]
 # Without any proxy:
-#ExecStart=/usr/bin/env docker run --env POLYFILL_PORT=80 --interactive --name polyfill -p 0.0.0.0:80:80 --rm tsickert/on-premise-polyfill.io
-ExecStart=/usr/bin/env docker run --env POLYFILL_PORT=80 --expose 80 --interactive --name polyfill --network proxy_default --rm tsickert/on-premise-polyfill.io
+#ExecStart=/usr/bin/env docker run --env POLYFILL_PORT=80 --interactive --name polyfill -p 0.0.0.0:80:80 --rm ghcr.io/thaibault/on-premise-polyfill.io
+ExecStart=/usr/bin/env docker run --env POLYFILL_PORT=80 --expose 80 --interactive --name polyfill --network proxy_default --rm ghcr.io/thaibault/on-premise-polyfill.io
 ExecStop=/usr/bin/env docker stop polyfill
 NotifyAccess=all
 # NOTE: Will be handled by docker.

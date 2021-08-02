@@ -24,7 +24,7 @@
 # endregion
 # region start container commands
 # Run the following command in the directory where this file lives to start:
-# podman / docker run --interactive --name polyfill.io -p 0.0.0.0:8080:8080 --rm --tty tsickert/on-premise-polyfill.io
+# podman / docker run --interactive --name polyfill.io -p 0.0.0.0:8080:8080 --rm --tty ghcr.io/thaibault/on-premise-polyfill.io
 # endregion
 FROM        node:latest
 ENV         POLYFILL_PORT 8080
