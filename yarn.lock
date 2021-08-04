@@ -922,14 +922,14 @@
     to-fast-properties "^2.0.0"
 
 "@financial-times/polyfill-useragent-normaliser@^1.7.0":
-  version "1.8.1"
-  resolved "https://registry.yarnpkg.com/@financial-times/polyfill-useragent-normaliser/-/polyfill-useragent-normaliser-1.8.1.tgz#00e35f49189276d07b76b38b983ccb9941159d73"
-  integrity sha512-VJFUMJyr1DZ++wiVFgk0GThJG8LUR94p/a73lc4d0a2YL6sfWSQAMF+1qg9gtCOzZWc+nx62E5IJExrUCetjEw==
+  version "1.10.1"
+  resolved "https://registry.yarnpkg.com/@financial-times/polyfill-useragent-normaliser/-/polyfill-useragent-normaliser-1.10.1.tgz#e23115a3ab0b29417b00cf0b49db4a4ce9fe27ed"
+  integrity sha512-u+VCD2ISgkh6eoxdyb0L8bTApdU8t3fvHLS9ZXokC02b8iQD8nkRcpui5BIbuF+aYkWkTpaJhUInCueAGDBVAw==
   dependencies:
-    "@financial-times/useragent_parser" "^1.5.1"
+    "@financial-times/useragent_parser" "^1.6.0"
     semver "^7.1.1"
 
-"@financial-times/useragent_parser@^1.5.1":
+"@financial-times/useragent_parser@^1.6.0":
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/@financial-times/useragent_parser/-/useragent_parser-1.6.0.tgz#fcbba56936735fb4a8e6b700baf787c863ed64d1"
   integrity sha512-v6Ucl//xSVhpyTtHMVCA9uv9W7CVwj8vBAQFKFDkfGC1DquBobOMhnzH9Odc+Tunf+i4WRnNgt90fQ7CSAbU3g==
@@ -1043,9 +1043,9 @@
   integrity sha512-Klz949h02Gz2uZCMGwDUSDS1YBlTdDDgbWHi+81l29tQALUtvz4rAYi5uoVhE5Lagoq6DeqAUlbrHvW/mXDgdQ==
 
 "@types/node@*":
-  version "16.4.10"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-16.4.10.tgz#e57e2a54fc6da58da94b3571b1cb456d39f88597"
-  integrity sha512-TmVHsm43br64js9BqHWqiDZA+xMtbUpI1MBIA0EyiBmoV9pcEYFOSdj5fr6enZNfh4fChh+AGOLIzGwJnkshyQ==
+  version "16.4.11"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-16.4.11.tgz#245030af802c776c31f00eb0cdde40ee615db462"
+  integrity sha512-nWSFUbuNiPKJEe1IViuodSI+9cM+vpM8SWF/O6dJK7wmGRNq55U7XavJHrlRrPkSMuUZUFzg1xaZ1B+ZZCrRWw==
 
 "@types/rimraf@*":
   version "3.0.1"
@@ -1057,13 +1057,12 @@
 
 "@types/webpack@https://registry.yarnpkg.com/@favware/skip-dependency/-/skip-dependency-1.1.0.tgz":
   version "1.1.0"
-  uid "7ff0adb2a0e32b1a0a48f432cf31c16b53f7f4ea"
   resolved "https://registry.yarnpkg.com/@favware/skip-dependency/-/skip-dependency-1.1.0.tgz#7ff0adb2a0e32b1a0a48f432cf31c16b53f7f4ea"
 
 "@webcomponents/template@^1.4.0":
-  version "1.4.4"
-  resolved "https://registry.yarnpkg.com/@webcomponents/template/-/template-1.4.4.tgz#2ca5a68b65b6e9cd9b17b25a951514f254c00742"
-  integrity sha512-QqCmmywIKJTilkl6UIPLxEBBuqhDaOBpvQyKOnUEwl9lJuVHBrVlhMIhhnp9VSZJ6xEUnp+PiX8DST1k0q/v4Q==
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/@webcomponents/template/-/template-1.5.0.tgz#45c15735f1ea7ecdb2f2d9d35663ea1f169a1308"
+  integrity sha512-DPQgBAedzjsFD7rgv7b6OKmpHq5VTBUCLmYfDiov2FC2C79QGaz+4iNmlVAem5iSicvN8DWTwU1kZ48XYLtuqg==
 
 Base64@^1.0.0:
   version "1.1.0"
@@ -1250,15 +1249,15 @@ braces@~3.0.2:
     fill-range "^7.0.1"
 
 browserslist@^4.16.6:
-  version "4.16.6"
-  resolved "https://registry.yarnpkg.com/browserslist/-/browserslist-4.16.6.tgz#d7901277a5a88e554ed305b183ec9b0c08f66fa2"
-  integrity sha512-Wspk/PqO+4W9qp5iUTJsa1B/QrYn1keNCcEP5OvP7WBwT4KaDly0uONYmC6Xa3Z5IqnUgS0KcgLYu1l74x0ZXQ==
+  version "4.16.7"
+  resolved "https://registry.yarnpkg.com/browserslist/-/browserslist-4.16.7.tgz#108b0d1ef33c4af1b587c54f390e7041178e4335"
+  integrity sha512-7I4qVwqZltJ7j37wObBe3SoTz+nS8APaNcrBOlgoirb6/HbEU2XxW/LpUDTCngM6iauwFqmRTuOMfyKnFGY5JA==
   dependencies:
-    caniuse-lite "^1.0.30001219"
+    caniuse-lite "^1.0.30001248"
     colorette "^1.2.2"
-    electron-to-chromium "^1.3.723"
+    electron-to-chromium "^1.3.793"
     escalade "^3.1.1"
-    node-releases "^1.1.71"
+    node-releases "^1.1.73"
 
 cache-base@^1.0.1:
   version "1.0.1"
@@ -1288,7 +1287,7 @@ camelcase@^1.0.2:
   resolved "https://registry.yarnpkg.com/camelcase/-/camelcase-1.2.1.tgz#9bb5304d2e0b56698b2c758b08a3eaa9daa58a39"
   integrity sha1-m7UwTS4LVmmLLHWLCKPqqdqlijk=
 
-caniuse-lite@^1.0.30001219:
+caniuse-lite@^1.0.30001248:
   version "1.0.30001248"
   resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001248.tgz#26ab45e340f155ea5da2920dadb76a533cb8ebce"
   integrity sha512-NwlQbJkxUFJ8nMErnGtT0QTM2TJ33xgz4KXJSMIrjXIbDVdaYueGyjOrLKRtJC+rTiWfi6j5cnZN1NBiSBJGNw==
@@ -1341,9 +1340,9 @@ cldr-core@38:
   integrity sha512-Da9xKjDp4qGGIX0VDsBqTan09iR5nuYD2a/KkfEaUyqKhu6wFVNRiCpPDXeRbpVwPBY6PgemV8WiHatMhcpy4A==
 
 clientnode@^3.0.755:
-  version "3.0.755"
-  resolved "https://registry.yarnpkg.com/clientnode/-/clientnode-3.0.755.tgz#10330cce4fadfe4d401616fc857441103514bff7"
-  integrity sha512-Q4+lg4lGdJ6RYtvY0AP3l20eh+53jVyzBpL/Dtydiw51/xp6En4xaLqJqXttgqZ1wehKwRdUbH6JMAfqYM4nqg==
+  version "3.0.778"
+  resolved "https://registry.yarnpkg.com/clientnode/-/clientnode-3.0.778.tgz#35ca92336354717f17a57322863aeff3c5686712"
+  integrity sha512-8RxBW26WuLBlsDc+B2YAV2QdSzV1UJ9LBoimb/tqsq0goheh/O6p7pz8iqU1p/+Pp0aHgydgERbGu7GgHunBcQ==
   dependencies:
     "@types/webpack" "https://registry.yarnpkg.com/@favware/skip-dependency/-/skip-dependency-1.1.0.tgz"
 
@@ -1506,10 +1505,10 @@ documentation-website@*:
     bootstrap "^3.3.7"
     website-utilities "*"
 
-electron-to-chromium@^1.3.723:
-  version "1.3.792"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.792.tgz#791b0d8fcf7411885d086193fb49aaef0c1594ca"
-  integrity sha512-RM2O2xrNarM7Cs+XF/OE2qX/aBROyOZqqgP+8FXMXSuWuUqCfUUzg7NytQrzZU3aSqk1Qq6zqnVkJsbfMkIatg==
+electron-to-chromium@^1.3.793:
+  version "1.3.795"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.795.tgz#91f09b4c77f8dab562dd592ce929b009201c24ff"
+  integrity sha512-4TPxrLf9Fzsi4rVgTlDm+ubxoXm3/TN67/LGHx/a4UkVubKILa6L26O6eTnHewixG/knzU9L3lLmfL39eElwlQ==
 
 escalade@^3.1.1:
   version "3.1.1"
@@ -2108,7 +2107,7 @@ nanomatch@^1.2.9:
     snapdragon "^0.8.1"
     to-regex "^3.0.1"
 
-node-releases@^1.1.71:
+node-releases@^1.1.73:
   version "1.1.73"
   resolved "https://registry.yarnpkg.com/node-releases/-/node-releases-1.1.73.tgz#dd4e81ddd5277ff846b80b52bb40c49edf7a7b20"
   integrity sha512-uW7fodD6pyW2FZNZnp/Z3hvWKeEW1Y8R1+1CnErE8cXFXzl5blBOoVB41CvMer6P6Q0S5FXDwcHgFd1Wj0U9zg==
