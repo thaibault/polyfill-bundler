@@ -31,14 +31,13 @@ ENV         POLYFILL_PORT 8080
 ENV         NODE_ENV production
 LABEL       maintainer="Torben Sickert <info@torben.website>"
 LABEL       Description="base" Vendor="thaibault products" Version="1.0"
-RUN         npm install --global npm@latest
-#RUN         npm install --global npm@7.18.1
 RUN         mkdir --parents /application
 COPY        . /application
 WORKDIR     /application
-RUN         npm run build
+RUN         yarn
+RUN         yarn build
 EXPOSE      $POLYFILL_PORT
-CMD         npm run start
+CMD         yarn start
 # region modline
 # vim: set tabstop=4 shiftwidth=4 expandtab filetype=dockerfile:
 # vim: foldmethod=marker foldmarker=region,endregion:
