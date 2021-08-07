@@ -34,8 +34,15 @@ LABEL       Description="base" Vendor="thaibault products" Version="1.0"
 RUN         mkdir --parents /application
 COPY        . /application
 WORKDIR     /application
-RUN         yarn
-RUN         yarn build
+
+# Install dev dependencies build and slice out dev dependencies afterwards.
+RUN         yarn --production=false && \
+            yarn unlink clientnode; \
+            yarn install --force --production=false && \
+            yarn build && \
+            rm node_modules --force --recursive && \
+            yarn --production=true
+
 EXPOSE      $POLYFILL_PORT
 CMD         yarn start
 # region modline
