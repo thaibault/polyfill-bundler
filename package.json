@@ -44,7 +44,7 @@
     "rimraf": "*"
   },
   "dependencies": {
-    "clientnode": "^3.0.755",
+    "clientnode": "*",
     "polyfill-library": "*"
   }
 }
