@@ -17,9 +17,9 @@
     "polyfill"
   ],
   "files": [
-    "index.ts"
+    "index.d.ts",
+    "index.js"
   ],
-  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/thaibault/on-premise-polyfill.io"
