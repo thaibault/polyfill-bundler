@@ -82,8 +82,7 @@ const instance:HttpServer = createServer(
                 // region write response
                 response.statusCode = 200
                 response.setHeader(
-                    'Content-Type',
-                    'content-type: text/javascript'
+                    'Content-Type', 'text/javascript; charset=utf-8'
                 )
                 response.write(
                     await polyfillLibrary.getPolyfillString(configuration)
