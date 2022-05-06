@@ -30,7 +30,7 @@
     "serve": "./index.js",
     "start": "yarn serve",
     "update": "yarn version --patch && yarn publish",
-    "update:documentation": "documentationWebsite --log-level info"
+    "update:documentation": "documentation-website"
   },
   "devDependencies": {
     "@babel/cli": "*",
