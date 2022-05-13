@@ -6,7 +6,7 @@
 import Tools, {CloseEventNames} from 'clientnode'
 import {Mapping} from 'clientnode/type'
 import {
-    // createServer,
+    createServer as createHttp2Server,
     Http2Server as HttpServer,
     Http2ServerResponse as HTTPServerResponse,
     Http2ServerRequest as HTTPServerRequest
@@ -17,11 +17,14 @@ import url from 'url'
 // endregion
 // region types
 const Flags = ['always', 'gated'] as const
-type Flag = Flags[number]
+type Flag = typeof Flags[number]
 const UnknownTechnologyConfigurations = ['ignore', 'polyfill'] as const
-type UnknownTechnologyConfiguration = UnknownTechnologyConfigurations[number]
+type UnknownTechnologyConfiguration =
+    typeof UnknownTechnologyConfigurations[number]
 // endregion
-const instance:HttpServer = createServer(
+const instance:HttpServer = (
+    createServer as unknown as typeof createHttp2Server
+)(
     async (
         request:HTTPServerRequest, response:HTTPServerResponse
     ):Promise<void> => {
@@ -34,33 +37,49 @@ const instance:HttpServer = createServer(
                 // region parse query parameter
                 const queryParameter = url.parse(request.url, true).query
 
-                const excludes:Array<string> = queryParameter.excludes ?
-                    queryParameter.excludes.split(',') :
-                    []
-                const features:Array<string> = queryParameter.features ?
-                    queryParameter.features.split(',') :
-                    []
-                const flags:Array<Flag> = queryParameter.flags ?
-                    queryParameter.flags.split(',').filter(
-                        (flagCandidate:string):boolean =>
-                            Flags.includes(flagCandidate)
-                    ) :
-                    []
+                let excludes:Array<string> = []
+                for (const parameter of ([] as Array<string>).concat(
+                    queryParameter.excludes || []
+                ))
+                    excludes = excludes.concat(parameter.split(','))
+
+                let features:Array<string> = []
+                for (const parameter of ([] as Array<string>).concat(
+                    queryParameter.features || []
+                ))
+                    features = features.concat(parameter.split(','))
+
+                let flags:Array<Flag> = []
+                for (const parameter of ([] as Array<string>).concat(
+                    queryParameter.flags || []
+                ))
+                    flags = flags.concat(
+                        parameter
+                            .split(',')
+                            .filter((flagCandidate:string):boolean =>
+                                Flags.includes(flagCandidate as Flag)
+                            ) as Array<Flag>
+                    )
+
+                const givenUnknown:Array<string> =
+                    ([] as Array<string>).concat(queryParameter.unknown || [])
                 const unknown:UnknownTechnologyConfiguration =
-                    queryParameter.unknown ?
-                        UnknownTechnologyConfigurations.includes(
-                            polyfill.unknown
-                        ) :
+                    givenUnknown.length &&
+                    UnknownTechnologyConfigurations.includes(
+                        givenUnknown[0] as UnknownTechnologyConfiguration
+                    ) ?
+                        givenUnknown[0] as UnknownTechnologyConfiguration :
                         'polyfill'
                 // endregion
                 // region build feature options
-                const featureOptions:Mapping<{flags:Array<string>}> = {}
+                const featureOptions:Mapping<{flags:Array<Flag>}> = {}
                 for (const feature of features) {
                     const configuration:[string, ...Array<Flag>] =
-                        feature.split('|')
+                        feature.split('|') as [string, ...Array<Flag>]
+
                     featureOptions[configuration[0]] = {
                         flags: configuration.length > 1 ?
-                            configuration[1] :
+                            configuration[1] as unknown as Array<Flag> :
                             flags
                     }
                 }
@@ -85,7 +104,8 @@ const instance:HttpServer = createServer(
                     'Content-Type', 'text/javascript; charset=utf-8'
                 )
                 response.write(
-                    await polyfillLibrary.getPolyfillString(configuration)
+                    await polyfillLibrary.getPolyfillString(configuration) as
+                        string
                 )
                 // endregion
             }

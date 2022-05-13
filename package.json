@@ -20,13 +20,17 @@
     "index.d.ts",
     "index.js"
   ],
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/thaibault/on-premise-polyfill.io"
   },
   "scripts": {
-    "build": "babel --plugins @babel/plugin-transform-runtime --presets @babel/preset-env,@babel/preset-typescript --source-maps inline --out-file index.js index.ts && sed --in-place --regexp-extended 's:^// *(#![^ ]+ ).*$:\\1node:' index.js && chmod +x index.js",
-    "clear": "rimraf *.js",
+    "build": "yarn build:types; yarn build:plain",
+    "build:plain": "babel --plugins @babel/plugin-transform-runtime --presets @babel/preset-env,@babel/preset-typescript --source-maps inline --out-file index.js index.ts && sed --in-place --regexp-extended 's:^// *(#![^ ]+ ).*$:\\1node:' index.js && chmod +x index.js",
+    "build:types": "tsc --emitDeclarationOnly",
+    "check:types": "tsc --noEmit",
+    "clear": "rimraf *.js *.d.ts",
     "serve": "./index.js",
     "start": "yarn serve",
     "update": "yarn version --patch && yarn publish",
@@ -39,9 +43,12 @@
     "@babel/preset-env": "*",
     "@babel/preset-typescript": "*",
     "@babel/runtime": "*",
+    "@types/polyfill-library": "*",
     "@types/rimraf": "*",
     "documentation-website": "*",
-    "rimraf": "*"
+    "rimraf": "*",
+    "typescript": "*",
+    "webpack": "*"
   },
   "dependencies": {
     "clientnode": "*",
