@@ -27,7 +27,11 @@ Project status
 Use case
 --------
 
-TODO
+```JavaScript
+<script
+    src="https://polyfill.your.domain/polyfill.js?features=AbortController%2CArray.from"
+></script>
+```
 
 <!-- region modline
 vim: set tabstop=4 shiftwidth=4 expandtab:
