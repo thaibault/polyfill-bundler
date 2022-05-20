@@ -19,9 +19,11 @@ Project status
 [![<LABEL>](https://github.com/thaibault/on-premise-polyfill.io/actions/workflows/build.yaml/badge.svg)](https://github.com/thaibault/on-premise-polyfill.io/actions/workflows/build.yaml)
 [![<LABEL>](https://github.com/thaibault/on-premise-polyfill.io/actions/workflows/build:image:push.yaml/badge.svg)](https://github.com/thaibault/on-premise-polyfill.io/actions/workflows/build:image:push.yaml)
 
+<!-- Too unstable yet
 [![dependencies](https://img.shields.io/david/thaibault/on-premise-polyfill.io.svg)](https://david-dm.org/thaibault/on-premise-polyfill.io)
 [![development Dependencies](https://img.shields.io/david/dev/thaibault/on-premise-polyfill.io.svg)](https://david-dm.org/thaibault/on-premise-polyfill.io?type=dev)
 [![peer dependencies](https://img.shields.io/david/peer/thaibault/on-premise-polyfill.io.svg)](https://david-dm.org/thaibault/on-premise-polyfill.io?type=peer)
+-->
 [![documentation website](https://img.shields.io/website-up-down-green-red/http/torben.website/on-premise-polyfill.io.svg?label=documentation-website)](http://torben.website/on-premise-polyfill.io)
 
 Use case
