@@ -27,12 +27,17 @@
 # podman / docker run --interactive --name polyfill.io -p 0.0.0.0:8080:8080 --rm --tty ghcr.io/thaibault/on-premise-polyfill.io
 # endregion
 FROM        node:latest
+
 ENV         POLYFILL_PORT 8080
 ENV         NODE_ENV production
+
 LABEL       maintainer="Torben Sickert <info@torben.website>"
 LABEL       Description="base" Vendor="thaibault products" Version="1.0"
+
 RUN         mkdir --parents /application
+
 COPY        . /application
+
 WORKDIR     /application
 
 # Install dev dependencies build and slice out dev dependencies afterwards.
@@ -44,6 +49,7 @@ RUN         yarn --production=false && \
             yarn --production=true
 
 EXPOSE      $POLYFILL_PORT
+
 CMD         yarn start
 # region modline
 # vim: set tabstop=4 shiftwidth=4 expandtab filetype=dockerfile:
