@@ -27,7 +27,7 @@
 
 # arm_64
 
-# - docker pull node:lts-alpine3.15 && docker build --build-arg BASE_IMAGE=node:current-alpine3.15 --no-cache --tag ghcr.io/thaibault/on-premise-polyfill.io:latest-arm-64 ./
+# - docker pull node:current-alpine3.15 && docker build --build-arg BASE_IMAGE=node:current-alpine3.15 --no-cache --tag ghcr.io/thaibault/on-premise-polyfill.io:latest-arm-64 ./
 # - cat "${ILU_GITHUB_BASE_CONFIGURATION_PATH}masterToken.txt" | docker login ghcr.io --username thaibault --password-stdin && docker push ghcr.io/thaibault/on-premise-polyfill.io:latest-arm-64
 # endregion
 # region start container commands
