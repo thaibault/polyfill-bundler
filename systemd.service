@@ -30,7 +30,7 @@ Restart=always
 RestartSec=10
 
 User=root
-WorkingDirectory=/root/application
+WorkingDirectory=/srv/http/on-premise-polyfill.io
 
 [Install]
 WantedBy=multi-user.target
