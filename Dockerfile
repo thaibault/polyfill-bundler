@@ -16,17 +16,27 @@
 # region create commands
 # Run the following command in the directory where this file lives to build a
 # new docker image:
-# - podman pull node && podman build --file https://raw.githubusercontent.com/thaibault/on-premise-polyfill.io/master/Dockerfile --no-cache --tag ghcr.io/thaibault/on-premise-polyfill.io .
-# - podman push ghcr.io/thaibault/on-premise-polyfill.io:latest --creds "thaibault:$(cat "${ILU_GITHUB_BASE_CONFIGURATION_PATH}masterToken.txt")"
 
-# - docker pull node && docker build --no-cache --tag ghcr.io/thaibault/on-premise-polyfill.io:latest ./
-# - cat "${ILU_GITHUB_BASE_CONFIGURATION_PATH}masterToken.txt" | docker login ghcr.io --username thaibault --password-stdin && docker push ghcr.io/thaibault/on-premise-polyfill.io:latest
+# x86_64
+
+# - podman pull node && podman build --file https://raw.githubusercontent.com/thaibault/on-premise-polyfill.io/master/Dockerfile --no-cache --tag ghcr.io/thaibault/on-premise-polyfill.io:latest-x86-64 .
+# - podman push ghcr.io/thaibault/on-premise-polyfill.io:latest-x86-64 --creds "thaibault:$(cat "${ILU_GITHUB_BASE_CONFIGURATION_PATH}masterToken.txt")"
+
+# - docker pull node && docker build --no-cache --tag ghcr.io/thaibault/on-premise-polyfill.io:latest-x86-64 ./
+# - cat "${ILU_GITHUB_BASE_CONFIGURATION_PATH}masterToken.txt" | docker login ghcr.io --username thaibault --password-stdin && docker push ghcr.io/thaibault/on-premise-polyfill.io:latest-x86-64
+
+# arm_64
+
+# - docker pull node:lts-alpine3.15 && docker build --build-arg BASE_IMAGE=node:lts-alpine3.15 --no-cache --tag ghcr.io/thaibault/on-premise-polyfill.io:latest-arm-64 ./
+# - cat "${ILU_GITHUB_BASE_CONFIGURATION_PATH}masterToken.txt" | docker login ghcr.io --username thaibault --password-stdin && docker push ghcr.io/thaibault/on-premise-polyfill.io:latest-arm-64
 # endregion
 # region start container commands
 # Run the following command in the directory where this file lives to start:
 # podman / docker run --interactive --name polyfill.io -p 0.0.0.0:8080:8080 --rm --tty ghcr.io/thaibault/on-premise-polyfill.io
 # endregion
-FROM        node:latest
+ARG         BASE_IMAGE
+
+FROM        ${BASE_IMAGE:-'node'}
 
 ENV         POLYFILL_PORT 8080
 ENV         NODE_ENV production
