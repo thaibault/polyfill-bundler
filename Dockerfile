@@ -32,7 +32,7 @@
 # endregion
 # region start container commands
 # Run the following command in the directory where this file lives to start:
-# podman / docker run --interactive --name polyfill.io -p 0.0.0.0:8080:8080 --rm --tty ghcr.io/thaibault/on-premise-polyfill.io
+# podman / docker run --interactive --name polyfill.io -p 0.0.0.0:8080:8080 --rm --tty ghcr.io/thaibault/on-premise-polyfill.io:latest-x86-64
 # endregion
 ARG         BASE_IMAGE
 
