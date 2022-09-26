@@ -31,9 +31,10 @@
     "build:types": "tsc --emitDeclarationOnly",
     "check:types": "tsc --noEmit",
     "clear": "rimraf *.js *.d.ts",
+    "postversion": "git push --tags && yarn publish . --tag $npm_package_version && git push",
     "serve": "./index.js",
     "start": "yarn serve",
-    "update": "yarn version --patch && yarn publish",
+    "update": "yarn version --patch",
     "update:documentation": "documentation-website"
   },
   "devDependencies": {
