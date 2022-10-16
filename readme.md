@@ -17,7 +17,7 @@ Project status
 [![npm downloads](https://img.shields.io/npm/dy/on-premise-polyfill.io.svg)](https://www.npmjs.com/package/on-premise-polyfill.io)
 
 [![<LABEL>](https://github.com/thaibault/on-premise-polyfill.io/actions/workflows/build.yaml/badge.svg)](https://github.com/thaibault/on-premise-polyfill.io/actions/workflows/build.yaml)
-[![<LABEL>](https://github.com/thaibault/on-premise-polyfill.io/actions/workflows/build:image:x86-64:push.yaml/badge.svg)](https://github.com/thaibault/on-premise-polyfill.io/actions/workflows/build:image:x86-64:push.yaml)
+[![<LABEL>](https://github.com/thaibault/on-premise-polyfill.io/actions/workflows/build:image:x86-64:periodically:2:branches.yaml/badge.svg)](https://github.com/thaibault/on-premise-polyfill.io/actions/workflows/build:image:x86-64:periodically:2:branches.yaml)
 
 <!-- Too unstable yet
 [![dependencies](https://img.shields.io/david/thaibault/on-premise-polyfill.io.svg)](https://david-dm.org/thaibault/on-premise-polyfill.io)
