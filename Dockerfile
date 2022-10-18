@@ -19,10 +19,11 @@
 
 # - docker pull arm64v8/node && docker build --no-cache --tag ghcr.io/thaibault/on-premise-polyfill.io:latest ./
 # - cat "${ILU_GITHUB_BASE_CONFIGURATION_PATH}masterToken.txt" | docker login ghcr.io --username thaibault --password-stdin && docker push ghcr.io/thaibault/on-premise-polyfill.io:latest
+
 # endregion
 # region start container commands
 # Run the following command in the directory where this file lives to start:
-# podman / docker run --interactive --name polyfill.io -p 0.0.0.0:8080:8080 --rm --tty ghcr.io/thaibault/on-premise-polyfill.io:latest-x86-64
+# podman / docker run --interactive --name polyfill.io -p 0.0.0.0:8080:8080 --rm --tty ghcr.io/thaibault/on-premise-polyfill.io:latest
 # endregion
 ARG         BASE_IMAGE
 
