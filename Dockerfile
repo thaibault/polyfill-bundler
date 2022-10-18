@@ -17,18 +17,8 @@
 # Run the following command in the directory where this file lives to build a
 # new docker image:
 
-# x86-64
-
-# - podman pull node && podman build --file https://raw.githubusercontent.com/thaibault/on-premise-polyfill.io/master/Dockerfile --no-cache --tag ghcr.io/thaibault/on-premise-polyfill.io:latest-x86-64 .
-# - podman push ghcr.io/thaibault/on-premise-polyfill.io:latest-x86-64 --creds "thaibault:$(cat "${ILU_GITHUB_BASE_CONFIGURATION_PATH}masterToken.txt")"
-
-# - docker pull node && docker build --no-cache --tag ghcr.io/thaibault/on-premise-polyfill.io:latest-x86-64 ./
-# - cat "${ILU_GITHUB_BASE_CONFIGURATION_PATH}masterToken.txt" | docker login ghcr.io --username thaibault --password-stdin && docker push ghcr.io/thaibault/on-premise-polyfill.io:latest-x86-64
-
-# arm-64
-
-# - docker pull arm64v8/node && docker build --build-arg BASE_IMAGE=arm64v8/node --no-cache --tag ghcr.io/thaibault/on-premise-polyfill.io:latest-arm-64 ./
-# - cat "${ILU_GITHUB_BASE_CONFIGURATION_PATH}masterToken.txt" | docker login ghcr.io --username thaibault --password-stdin && docker push ghcr.io/thaibault/on-premise-polyfill.io:latest-arm-64
+# - docker pull arm64v8/node && docker build --no-cache --tag ghcr.io/thaibault/on-premise-polyfill.io:latest ./
+# - cat "${ILU_GITHUB_BASE_CONFIGURATION_PATH}masterToken.txt" | docker login ghcr.io --username thaibault --password-stdin && docker push ghcr.io/thaibault/on-premise-polyfill.io:latest
 # endregion
 # region start container commands
 # Run the following command in the directory where this file lives to start:
