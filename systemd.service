@@ -16,11 +16,11 @@ Conflicts=shutdown.target reboot.target halt.target
 
 [Service]
 # Without any proxy:
-#ExecStart=/usr/bin/env docker run --env POLYFILL_PORT=80 --interactive --name polyfill -p 0.0.0.0:80:80 --rm ghcr.io/thaibault/on-premise-polyfill.io:latest-x86-64
+#ExecStart=/usr/bin/env docker run --env POLYFILL_PORT=80 --interactive --name polyfill -p 0.0.0.0:80:80 --rm ghcr.io/thaibault/on-premise-polyfill.io:latest
 
 # With proxy
 ExecStartPre=-/usr/bin/env docker network create proxy
-ExecStart=/usr/bin/env docker run --env POLYFILL_PORT=80 --expose 80 --interactive --log-opt max-size=10m --name polyfill --network proxy --rm ghcr.io/thaibault/on-premise-polyfill.io:latest-x86-64
+ExecStart=/usr/bin/env docker run --env POLYFILL_PORT=80 --expose 80 --interactive --log-opt max-size=10m --name polyfill --network proxy --rm ghcr.io/thaibault/on-premise-polyfill.io:latest
 
 ExecStop=/usr/bin/env docker stop polyfill
 
