@@ -17,13 +17,8 @@ Project status
 [![npm downloads](https://img.shields.io/npm/dy/on-premise-polyfill.io.svg)](https://www.npmjs.com/package/on-premise-polyfill.io)
 
 [![<LABEL>](https://github.com/thaibault/on-premise-polyfill.io/actions/workflows/build.yaml/badge.svg)](https://github.com/thaibault/on-premise-polyfill.io/actions/workflows/build.yaml)
-[![<LABEL>](https://github.com/thaibault/on-premise-polyfill.io/actions/workflows/build:image:periodically:2:branches.yaml/badge.svg)](https://github.com/thaibault/on-premise-polyfill.io/actions/workflows/build:image:periodically:2:branches.yaml)
+[![<LABEL>](https://github.com/thaibault/on-premise-polyfill.io/actions/workflows/build-image-periodically-2-branches.yaml/badge.svg)](https://github.com/thaibault/on-premise-polyfill.io/actions/workflows/build-image-periodically-2-branches.yaml)
 
-<!-- Too unstable yet
-[![dependencies](https://img.shields.io/david/thaibault/on-premise-polyfill.io.svg)](https://david-dm.org/thaibault/on-premise-polyfill.io)
-[![development Dependencies](https://img.shields.io/david/dev/thaibault/on-premise-polyfill.io.svg)](https://david-dm.org/thaibault/on-premise-polyfill.io?type=dev)
-[![peer dependencies](https://img.shields.io/david/peer/thaibault/on-premise-polyfill.io.svg)](https://david-dm.org/thaibault/on-premise-polyfill.io?type=peer)
--->
 [![documentation website](https://img.shields.io/website-up-down-green-red/http/torben.website/on-premise-polyfill.io.svg?label=documentation-website)](http://torben.website/on-premise-polyfill.io)
 
 Use case
