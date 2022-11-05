@@ -18,7 +18,7 @@
 # new docker image:
 
 # - docker pull arm64v8/node && docker build --no-cache --tag ghcr.io/thaibault/on-premise-polyfill.io:latest ./
-# - cat "${ILU_GITHUB_BASE_CONFIGURATION_PATH}masterToken.txt" | docker login ghcr.io --username thaibault --password-stdin && docker push ghcr.io/thaibault/on-premise-polyfill.io:latest
+# - cat "${ILU_GITHUB_BASE_CONFIGURATION_PATH}mainToken.txt" | docker login ghcr.io --username thaibault --password-stdin && docker push ghcr.io/thaibault/on-premise-polyfill.io:latest
 
 # endregion
 # region start container commands
