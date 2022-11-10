@@ -29,7 +29,7 @@ ARG         BASE_IMAGE
 
 FROM        ${BASE_IMAGE:-'node'} as base
 
-ENV         APPLICATION_PATH /application
+ENV         APPLICATION_PATH /application/
 ENV         POLYFILL_PORT 8080
 ENV         NODE_ENV production
 
