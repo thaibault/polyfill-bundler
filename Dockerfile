@@ -56,7 +56,11 @@ RUN         yarn --production=false && \
 FROM        base as runtime
 
 COPY        --from=build \
-                "${APPLICATION_PATH}index.js" "${APPLICATION_PATH}index.js"
+                "${APPLICATION_PATH}index.js" \
+                "${APPLICATION_PATH}index.js"
+COPY        --from=build \
+                "${APPLICATION_PATH}package.json" \
+                "${APPLICATION_PATH}package.json"
 
 EXPOSE      $POLYFILL_PORT
 
