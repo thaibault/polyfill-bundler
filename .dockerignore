@@ -1,0 +1,27 @@
+# -*- coding: utf-8 -*-
+
+# NOTE: Every entry has be sorted in given alphabetic order to avoid
+# duplicates!
+#
+# Sorting order (first letter matters but a ! can precede.):
+#
+# 1. Alphabetical
+# 2. Not one of the others
+# 3. .
+# 4. *
+# 5. /
+
+# Docker
+Dockerfile
+
+# Git
+.git
+.github
+.gitignore
+# Project specific
+# ...
+
+# region vim modline
+# vim: set tabstop=4 shiftwidth=4 expandtab:
+# vim: foldmethod=marker foldmarker=region,endregion:
+# endregion
