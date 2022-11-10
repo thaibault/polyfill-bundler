@@ -27,19 +27,22 @@
 # endregion
 ARG         BASE_IMAGE
 
-FROM        ${BASE_IMAGE:-'node'}
+FROM        ${BASE_IMAGE:-'node'} as base
 
+ENV         APPLICATION_PATH /application
 ENV         POLYFILL_PORT 8080
 ENV         NODE_ENV production
 
 LABEL       maintainer="Torben Sickert <info@torben.website>"
 LABEL       Description="base" Vendor="thaibault products" Version="1.0"
 
-RUN         mkdir --parents /application
+RUN         mkdir --parents "$APPLICATION_PATH"
 
-COPY        . /application
+WORKDIR     "$APPLICATION_PATH"
 
-WORKDIR     /application
+FROM        base as build
+
+COPY        . "$APPLICATION_PATH"
 
 # Install dev dependencies build and slice out dev dependencies afterwards.
 RUN         yarn --production=false && \
@@ -47,7 +50,13 @@ RUN         yarn --production=false && \
             yarn install --force --production=false && \
             yarn build && \
             rm node_modules --force --recursive && \
-            yarn --production=true
+            yarn --production=true && \
+            rm --force --recursive /tmp/*
+
+FROM        base as runtime
+
+COPY        --from=build \
+                "${APPLICATION_PATH}index.js" "${APPLICATION_PATH}index.js"
 
 EXPOSE      $POLYFILL_PORT
 
