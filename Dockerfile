@@ -30,7 +30,7 @@ ARG         BASE_IMAGE
 FROM        ${BASE_IMAGE:-'node'} as base
 
 ENV         APPLICATION_PATH /application/
-ENV         POLYFILL_PORT 8080
+ENV         PORT 8080
 ENV         NODE_ENV production
 
 LABEL       maintainer="Torben Sickert <info@torben.website>"
@@ -65,7 +65,7 @@ COPY        --from=build \
                 "${APPLICATION_PATH}package.json" \
                 "${APPLICATION_PATH}package.json"
 
-EXPOSE      $POLYFILL_PORT
+EXPOSE      $PORT
 
 CMD         yarn start
 # region modline
