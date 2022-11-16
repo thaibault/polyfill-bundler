@@ -1,15 +1,15 @@
 {
-  "name": "on-premise-polyfill.io",
+  "name": "polyfill",
   "version": "1.0.50",
   "license": "CC-BY-3.0",
-  "description": "On-premise polyfill.io service.",
-  "homepage": "https://torben.website/on-premise-polyfill.io service.",
+  "description": "Polyfill service.",
+  "homepage": "https://torben.website/polyfill service.",
   "documentationWebsite": {
     "languages": [
       "deDE",
       "enUS"
     ],
-    "name": "on-premise-polyfill.io",
+    "name": "polyfill",
     "tagline": "",
     "trackingCode": ""
   },
@@ -22,7 +22,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/thaibault/on-premise-polyfill.io"
+    "url": "https://github.com/thaibault/polyfill"
   },
   "scripts": {
     "build": "yarn build:types; yarn build:plain",
