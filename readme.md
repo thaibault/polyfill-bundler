@@ -13,13 +13,13 @@ endregion -->
 Project status
 --------------
 
-[![npm](https://img.shields.io/npm/v/polyfill?color=%23d55e5d&label=npm%20package%20version&logoColor=%23d55e5d)](https://www.npmjs.com/package/polyfill)
-[![npm downloads](https://img.shields.io/npm/dy/polyfill.svg)](https://www.npmjs.com/package/polyfill)
+[![npm](https://img.shields.io/npm/v/polyfill-bundler?color=%23d55e5d&label=npm%20package%20version&logoColor=%23d55e5d)](https://www.npmjs.com/package/polyfill-bundler)
+[![npm downloads](https://img.shields.io/npm/dy/polyfill-bundler.svg)](https://www.npmjs.com/package/polyfill-bundler)
 
-[![<LABEL>](https://github.com/thaibault/polyfill/actions/workflows/build.yaml/badge.svg)](https://github.com/thaibault/polyfill/actions/workflows/build.yaml)
-[![<LABEL>](https://github.com/thaibault/polyfill/actions/workflows/build-image-periodically-2-branches.yaml/badge.svg)](https://github.com/thaibault/polyfill/actions/workflows/build-image-periodically-2-branches.yaml)
+[![<LABEL>](https://github.com/thaibault/polyfill-bundler/actions/workflows/build.yaml/badge.svg)](https://github.com/thaibault/polyfill-bundler/actions/workflows/build.yaml)
+[![<LABEL>](https://github.com/thaibault/polyfill-bundler/actions/workflows/build-image-periodically-2-branches.yaml/badge.svg)](https://github.com/thaibault/polyfill-bundler/actions/workflows/build-image-periodically-2-branches.yaml)
 
-[![documentation website](https://img.shields.io/website-up-down-green-red/http/torben.website/polyfill.svg?label=documentation-website)](http://torben.website/polyfill)
+[![documentation website](https://img.shields.io/website-up-down-green-red/http/torben.website/polyfill-bundler.svg?label=documentation-website)](http://torben.website/polyfill-bundler)
 
 Use case
 --------

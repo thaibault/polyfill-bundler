@@ -1,20 +1,22 @@
 {
-  "name": "polyfill",
+  "name": "polyfill-bundler",
   "version": "1.0.51",
   "license": "CC-BY-3.0",
   "description": "Polyfill service.",
-  "homepage": "https://torben.website/polyfill service.",
+  "homepage": "https://torben.website/polyfill-bundler",
   "documentationWebsite": {
     "languages": [
       "deDE",
       "enUS"
     ],
-    "name": "polyfill",
+    "name": "polyfill-bundler",
     "tagline": "",
     "trackingCode": ""
   },
   "keywords": [
-    "polyfill"
+    "polyfill",
+    "bundle",
+    "service"
   ],
   "files": [
     "index.d.ts",
@@ -22,7 +24,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/thaibault/polyfill"
+    "url": "https://github.com/thaibault/polyfill-bundler"
   },
   "scripts": {
     "build": "yarn build:types; yarn build:plain",
