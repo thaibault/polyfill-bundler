@@ -17,6 +17,7 @@ Project status
 [![npm downloads](https://img.shields.io/npm/dy/polyfill-bundler.svg)](https://www.npmjs.com/package/polyfill-bundler)
 
 [![<LABEL>](https://github.com/thaibault/polyfill-bundler/actions/workflows/build.yaml/badge.svg)](https://github.com/thaibault/polyfill-bundler/actions/workflows/build.yaml)
+[![<LABEL>](https://github.com/thaibault/polyfill-bundler/actions/workflows/check-types.yaml/badge.svg)](https://github.com/thaibault/polyfill-bundler/actions/workflows/check-types.yaml)
 [![<LABEL>](https://github.com/thaibault/polyfill-bundler/actions/workflows/build-image-periodically-2-branches.yaml/badge.svg)](https://github.com/thaibault/polyfill-bundler/actions/workflows/build-image-periodically-2-branches.yaml)
 
 [![documentation website](https://img.shields.io/website-up-down-green-red/http/torben.website/polyfill-bundler.svg?label=documentation-website)](http://torben.website/polyfill-bundler)
