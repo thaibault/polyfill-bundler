@@ -119,7 +119,7 @@ const instance:HttpServer = (
 )
 
 const port:number =
-    parseInt(process.argv[2] ?? process.env.POLYFILL_PORT ?? 8080)
+    parseInt(process.argv[2] ?? process.env.PORT ?? 8080)
 
 console.info(`Listen on port ${port} for incoming requests.`)
 
