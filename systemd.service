@@ -16,7 +16,7 @@ Conflicts=shutdown.target reboot.target halt.target
 
 [Service]
 # Without any proxy:
-#ExecStart=/usr/bin/env docker run --env PORT=80 --interactive --name polyfill -p 0.0.0.0:80:80 --rm ghcr.io/thaibault/on-premise-polyfill.io:latest
+#ExecStart=/usr/bin/env docker run --env PORT=80 --interactive --name polyfill --publish 0.0.0.0:80:80 --rm ghcr.io/thaibault/on-premise-polyfill.io:latest
 
 # With proxy
 ExecStartPre=-/usr/bin/env docker network create proxy
