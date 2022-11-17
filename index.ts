@@ -31,9 +31,7 @@ const instance:HttpServer = (
         try {
             console.info('Got request url', request.url)
 
-            if (!request.url.startsWith('/polyfill.'))
-                response.statusCode = 404
-            else {
+            if (request.url.startsWith('/polyfill.')) {
                 // region parse query parameter
                 const queryParameter = url.parse(request.url, true).query
 
@@ -108,7 +106,8 @@ const instance:HttpServer = (
                         string
                 )
                 // endregion
-            }
+            } else
+                response.statusCode = 404
         } catch (error) {
             console.warn('Error occurred:', error)
             response.statusCode = 500
@@ -121,9 +120,10 @@ const instance:HttpServer = (
 const port:number =
     parseInt(process.argv[2] ?? process.env.PORT ?? 8080)
 
-console.info(`Listen on port ${port} for incoming requests.`)
-
-instance.listen(port)
+instance.listen(
+    port,
+    ():void => console.info(`Listen on port ${port} for incoming requests.`)
+)
 
 for (const name of CloseEventNames)
     process.on(name, ():void => {
