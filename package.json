@@ -55,5 +55,9 @@
   "dependencies": {
     "clientnode": "*",
     "polyfill-library": "*"
+  },
+  "engines": {
+    "node": ">=19",
+    "npm": ">=8"
   }
 }
