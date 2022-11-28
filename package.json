@@ -44,7 +44,6 @@
     "@babel/plugin-transform-runtime": "*",
     "@babel/preset-env": "*",
     "@babel/preset-typescript": "*",
-    "@babel/runtime": "*",
     "@types/polyfill-library": "*",
     "@types/rimraf": "*",
     "documentation-website": "*",
@@ -53,6 +52,7 @@
     "webpack": "*"
   },
   "dependencies": {
+    "@babel/runtime": "*",
     "clientnode": "*",
     "polyfill-library": "*"
   },
