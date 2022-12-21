@@ -17,7 +17,7 @@
 # Run the following command in the directory where this file lives to build a
 # new docker image:
 
-# - docker pull arm64v8/node && docker build --no-cache --tag ghcr.io/thaibault/polyfill-bundler:latest ./
+# - docker pull arm64v8/node && docker build --no-cache --tag ghcr.io/thaibault/polyfill-bundler:latest https://github.com/thaibault/polyfill-bundler.git#main
 # - cat "${ILU_GITHUB_BASE_CONFIGURATION_PATH}mainToken.txt" | docker login ghcr.io --username thaibault --password-stdin && docker push ghcr.io/thaibault/polyfill-bundler:latest
 
 # endregion
