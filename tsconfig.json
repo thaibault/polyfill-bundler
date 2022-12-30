@@ -8,7 +8,7 @@
         "esModuleInterop": true,
         "experimentalDecorators": true,
         "isolatedModules": true,
-        "lib": ["dom", "esnext"],
+        "lib": ["DOM", "ESNext"],
         "module": "esnext",
         "moduleResolution": "node",
         "resolveJsonModule": true,
