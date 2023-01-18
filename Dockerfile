@@ -17,7 +17,7 @@
 # Run the following command in the directory where this file lives to build a
 # new docker image:
 
-# - docker pull arm64v8/node && docker build --no-cache --tag ghcr.io/thaibault/polyfill-bundler:latest https://github.com/thaibault/polyfill-bundler.git#main
+# - docker pull arm64v8/node && docker build --no-cache --tag ghcr.io/thaibault/polyfill-bundler:latest .
 # endregion
 # region start container commands
 # Run the following command in the directory where this file lives to start:
@@ -42,7 +42,8 @@ FROM        base as build
 
 COPY        . "$APPLICATION_PATH"
 
-# Install dev dependencies build and slice out dev dependencies afterwards.
+            # Install dev dependencies build and slice out dev dependencies
+            # afterwards.
             # NOTE: Use busybox compatible commands (shortoptions).
 RUN         yarn --production=false && \
             yarn unlink clientnode; \
