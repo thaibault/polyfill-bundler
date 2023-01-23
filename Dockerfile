@@ -1,3 +1,4 @@
+# syntax=docker/dockerfile-upstream:master-labs
 # region header
 # [Project page](https://torben.website/polyfill-bundler)
 
@@ -17,9 +18,7 @@
 # Run the following command in the directory where this file lives to build a
 # new docker image:
 
-# - docker pull arm64v8/node && docker build --no-cache --tag ghcr.io/thaibault/polyfill-bundler:latest https://github.com/thaibault/polyfill-bundler.git#main
-# - cat "${ILU_GITHUB_BASE_CONFIGURATION_PATH}mainToken.txt" | docker login ghcr.io --username thaibault --password-stdin && docker push ghcr.io/thaibault/polyfill-bundler:latest
-
+# - docker pull arm64v8/node && docker buildx build --no-cache --tag ghcr.io/thaibault/polyfill-bundler:latest .
 # endregion
 # region start container commands
 # Run the following command in the directory where this file lives to start:
@@ -42,9 +41,10 @@ WORKDIR     "$APPLICATION_PATH"
 
 FROM        base as build
 
-COPY        . "$APPLICATION_PATH"
+COPY        --link . "$APPLICATION_PATH"
 
-# Install dev dependencies build and slice out dev dependencies afterwards.
+            # Install dev dependencies build and slice out dev dependencies
+            # afterwards.
             # NOTE: Use busybox compatible commands (shortoptions).
 RUN         yarn --production=false && \
             yarn unlink clientnode; \
@@ -57,12 +57,15 @@ RUN         yarn --production=false && \
 FROM        base as runtime
 
 COPY        --from=build \
+            --link \
                 "${APPLICATION_PATH}index.js" \
                 "${APPLICATION_PATH}index.js"
 COPY        --from=build \
+            --link \
                 "${APPLICATION_PATH}node_modules" \
                 "${APPLICATION_PATH}node_modules"
 COPY        --from=build \
+            --link \
                 "${APPLICATION_PATH}package.json" \
                 "${APPLICATION_PATH}package.json"
 
