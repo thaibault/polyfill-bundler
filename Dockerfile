@@ -18,7 +18,7 @@
 # Run the following command in the directory where this file lives to build a
 # new docker image:
 
-# - docker pull arm64v8/node && docker build --no-cache --tag ghcr.io/thaibault/polyfill-bundler:latest .
+# - docker pull arm64v8/node && docker buildx build --no-cache --tag ghcr.io/thaibault/polyfill-bundler:latest .
 # endregion
 # region start container commands
 # Run the following command in the directory where this file lives to start:
