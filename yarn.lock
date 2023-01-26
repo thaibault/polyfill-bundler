@@ -1323,9 +1323,9 @@ buffer-from@^1.0.0:
   integrity sha512-E+XQCRwSbaaiChtv6k6Dwgc+bx+Bs6vuKJHHl5kox/BaKbhiXzqQOwK4cO22yElGp2OCmjwVhT3HmxgyPGnJfQ==
 
 caniuse-lite@^1.0.30001400:
-  version "1.0.30001447"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001447.tgz#ef1f39ae38d839d7176713735a8e467a0a2523bd"
-  integrity sha512-bdKU1BQDPeEXe9A39xJnGtY0uRq/z5osrnXUw0TcK+EYno45Y+U7QU9HhHEyzvMDffpYadFXi3idnSNkcwLkTw==
+  version "1.0.30001448"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001448.tgz#ca7550b1587c92a392a2b377cd9c508b3b4395bf"
+  integrity sha512-tq2YI+MJnooG96XpbTRYkBxLxklZPOdLmNIOdIhvf7SNJan6u5vCKum8iT7ZfCt70m1GPkuC7P3TtX6UuhupuA==
 
 chalk@^2.0.0:
   version "2.4.2"
@@ -1357,9 +1357,9 @@ chrome-trace-event@^1.0.2:
   integrity sha512-p3KULyQg4S7NIHixdwbGX+nFHkoBiA4YQmyWtjb8XngSKV124nJmRysgAeujbUVb15vh+RvFUfCPqU7rXk+hZg==
 
 clientnode@*:
-  version "3.0.1014"
-  resolved "https://registry.yarnpkg.com/clientnode/-/clientnode-3.0.1014.tgz#ae592844b14debb9753ce74f9d63d23f30470f44"
-  integrity sha512-2UgqEmONvLIB9vadvBpfiMNAPMjTg1nLmlTWuj1E999TYa8j/YqlfKqsst+0KNJkrT8NkvRv+LLub258s/0Dlg==
+  version "3.0.1016"
+  resolved "https://registry.yarnpkg.com/clientnode/-/clientnode-3.0.1016.tgz#a16a6d6e08770cdc9fd674e19acfb146b593da99"
+  integrity sha512-x3wmFoCw8vLDvxuyE7cTcIz8GSrdS9iHUbAb9Zu6tmzDoXSjODzojaRNSMVS+dyZE3CME64zlCCbpV8PtmRpYQ==
 
 color-convert@^1.9.0:
   version "1.9.3"
@@ -1413,9 +1413,9 @@ debug@^4.1.0, debug@^4.1.1:
     ms "2.1.2"
 
 documentation-website@*:
-  version "1.0.291"
-  resolved "https://registry.yarnpkg.com/documentation-website/-/documentation-website-1.0.291.tgz#4ff91f0322e6147a5445d4c120b48d7457ec8d6c"
-  integrity sha512-nUE9ullUb5e1Sdbg6hJbe4DT2npc4ggJEuk3ApXU7WXFt2i955amXXYFPk+Z5EMgMzbUfzEBsohV5ZRvi5IzSg==
+  version "1.0.292"
+  resolved "https://registry.yarnpkg.com/documentation-website/-/documentation-website-1.0.292.tgz#d03784ff4a5f6f02425c68fd1564fb1136d1f84f"
+  integrity sha512-RX0Ho+G/6W8j6SazBtVnegJO1DPCRpMiWnZjz8HHuDVS0Vt/ODavilW0XPy40B0g5B6M6naafYO4nIRahVlVFw==
 
 electron-to-chromium@^1.4.251:
   version "1.4.284"
@@ -1915,9 +1915,9 @@ resolve@^1.14.2:
     supports-preserve-symlinks-flag "^1.0.0"
 
 rimraf@*:
-  version "4.1.1"
-  resolved "https://registry.yarnpkg.com/rimraf/-/rimraf-4.1.1.tgz#ec29817863e5d82d22bca82f9dc4325be2f1e72b"
-  integrity sha512-Z4Y81w8atcvaJuJuBB88VpADRH66okZAuEm+Jtaufa+s7rZmIz+Hik2G53kGaNytE7lsfXyWktTmfVz0H9xuDg==
+  version "4.1.2"
+  resolved "https://registry.yarnpkg.com/rimraf/-/rimraf-4.1.2.tgz#20dfbc98083bdfaa28b01183162885ef213dbf7c"
+  integrity sha512-BlIbgFryTbw3Dz6hyoWFhKk+unCcHMSkZGrTFVAx2WmttdBSonsdtRlwiuTbDqTKr+UlXIUqJVS4QT5tUzGENQ==
 
 safe-buffer@^5.1.0:
   version "5.2.1"
