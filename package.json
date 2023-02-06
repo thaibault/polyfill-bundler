@@ -45,7 +45,6 @@
     "@babel/preset-env": "*",
     "@babel/preset-typescript": "*",
     "@types/polyfill-library": "*",
-    "@types/rimraf": "*",
     "documentation-website": "*",
     "rimraf": "*",
     "typescript": "*",
