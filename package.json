@@ -1,6 +1,6 @@
 {
   "name": "polyfill-bundler",
-  "version": "1.0.79",
+  "version": "1.0.80",
   "license": "CC-BY-3.0",
   "description": "Polyfill service.",
   "homepage": "https://torben.website/polyfill-bundler",
