@@ -20,7 +20,7 @@ Project status
 
 [![check types](https://img.shields.io/github/actions/workflow/status/thaibault/polyfill-bundler/check-types.yaml?label=check%20types&style=for-the-badge)](https://github.com/thaibault/polyfill-bundler/actions/workflows/check-types.yaml)
 
-[![build & push image](https://img.shields.io/github/actions/workflow/status/thaibault/polyfill-bundler/build-image-periodically-2-branches.yaml?style=for-the-badge)](https://github.com/thaibault/polyfill-bundler/actions/workflows/build-image-periodically-2-branches.yaml)
+[![build push image](https://img.shields.io/github/actions/workflow/status/thaibault/polyfill-bundler/build-image-periodically-2-branches.yaml?style=for-the-badge)](https://github.com/thaibault/polyfill-bundler/actions/workflows/build-image-periodically-2-branches.yaml)
 
 [![documentation website](https://img.shields.io/website-up-down-green-red/https/torben.website/polyfill-bundler.svg?label=documentation-website&style=for-the-badge)](https://torben.website/polyfill-bundler)
 
