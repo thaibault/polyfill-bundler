@@ -13,14 +13,16 @@ endregion -->
 Project status
 --------------
 
-[![npm](https://img.shields.io/npm/v/polyfill-bundler?color=%23d55e5d&label=npm%20package%20version&logoColor=%23d55e5d)](https://www.npmjs.com/package/polyfill-bundler)
-[![npm downloads](https://img.shields.io/npm/dy/polyfill-bundler.svg)](https://www.npmjs.com/package/polyfill-bundler)
+[![npm](https://img.shields.io/npm/v/polyfill-bundler?color=%23d55e5d&label=npm%20package%20version&logoColor=%23d55e5d&style=for-the-badge)](https://www.npmjs.com/package/polyfill-bundler)
+[![npm downloads](https://img.shields.io/npm/dy/polyfill-bundler.svg?style=for-the-badge)](https://www.npmjs.com/package/polyfill-bundler)
 
-[![<LABEL>](https://github.com/thaibault/polyfill-bundler/actions/workflows/build.yaml/badge.svg)](https://github.com/thaibault/polyfill-bundler/actions/workflows/build.yaml)
-[![<LABEL>](https://github.com/thaibault/polyfill-bundler/actions/workflows/check-types.yaml/badge.svg)](https://github.com/thaibault/polyfill-bundler/actions/workflows/check-types.yaml)
-[![<LABEL>](https://github.com/thaibault/polyfill-bundler/actions/workflows/build-image-periodically-2-branches.yaml/badge.svg)](https://github.com/thaibault/polyfill-bundler/actions/workflows/build-image-periodically-2-branches.yaml)
+[![build](https://img.shields.io/github/actions/workflow/status/thaibault/polyfill-bundler/build.yaml?style=for-the-badge)](https://github.com/thaibault/polyfill-bundler/actions/workflows/build.yaml)
 
-[![documentation website](https://img.shields.io/website-up-down-green-red/http/torben.website/polyfill-bundler.svg?label=documentation-website)](http://torben.website/polyfill-bundler)
+[![check types](https://img.shields.io/github/actions/workflow/status/thaibault/polyfill-bundler/check-types.yaml?label=check%20types&style=for-the-badge)](https://github.com/thaibault/polyfill-bundler/actions/workflows/check-types.yaml)
+
+[![Build & push image](https://github.com/thaibault/polyfill-bundler/actions/workflows/build-image-periodically-2-branches.yaml/badge.svg)](https://github.com/thaibault/polyfill-bundler/actions/workflows/build-image-periodically-2-branches.yaml)
+
+[![documentation website](https://img.shields.io/website-up-down-green-red/https/torben.website/polyfill-bundler.svg?label=documentation-website&style=for-the-badge)](https://torben.website/polyfill-bundler)
 
 Use case
 --------
