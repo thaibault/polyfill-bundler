@@ -121,8 +121,7 @@ const port:number =
     parseInt(process.argv[2] ?? process.env.PORT ?? 8080)
 
 instance.listen(
-    port,
-    ():void => console.info(`Listen on port ${port} for incoming requests.`)
+    port, () => console.info(`Listen on port ${port} for incoming requests.`)
 )
 
 for (const name of CloseEventNames)

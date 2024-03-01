@@ -31,7 +31,7 @@
     "build:plain": "babel --plugins @babel/plugin-transform-runtime --presets @babel/preset-env,@babel/preset-typescript --source-maps inline --out-file index.js index.ts && sed --in-place --regexp-extended 's:^// *(#![^ ]+ ).*$:\\1node:' index.js && chmod +x index.js",
     "build:types": "tsc --emitDeclarationOnly",
     "check:types": "tsc --noEmit",
-    "clear": "rimraf *.js *.d.ts",
+    "clear": "rimraf --glob '*.js' '*.d.ts'",
     "postversion": "yarn publish --non-interactive; git push --tags && git push",
     "serve": "./index.js",
     "start": "yarn serve",
@@ -39,25 +39,26 @@
     "update:documentation": "documentation-website"
   },
   "devDependencies": {
-    "@babel/cli": "*",
-    "@babel/core": "*",
-    "@babel/plugin-transform-runtime": "*",
-    "@babel/preset-env": "*",
-    "@babel/preset-typescript": "*",
-    "@types/polyfill-library": "*",
-    "documentation-website": "*",
-    "rimraf": "*",
-    "typescript": "*",
-    "webpack": "*"
+    "@babel/cli": "^7.23.9",
+    "@babel/core": "^7.24.0",
+    "@babel/plugin-transform-runtime": "^7.24.0",
+    "@babel/preset-env": "^7.24.0",
+    "@babel/preset-typescript": "^7.23.3",
+    "@types/polyfill-library": "^3.108.4",
+    "documentation-website": "^1.0.326",
+    "rimraf": "^5.0.5",
+    "typescript": "^5.3.3",
+    "webpack": "^5.90.3"
   },
   "dependencies": {
-    "@babel/runtime": "*",
-    "clientnode": "*",
-    "polyfill-library": "*"
+    "@babel/runtime": "^7.24.0",
+    "clientnode": "^3.0.1136",
+    "polyfill-library": "^4.8.0"
   },
   "engines": {
     "node": ">=20",
     "npm": ">=10",
     "yarn": ">=4"
-  }
+  },
+  "packageManager": "yarn@4.1.0+sha256.81a00df816059803e6b5148acf03ce313cad36b7f6e5af6efa040a15981a6ffb"
 }
