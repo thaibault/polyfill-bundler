@@ -46,12 +46,11 @@ COPY       --link . "$APPLICATION_PATH"
            # Install dev dependencies build and slice out dev dependencies
            # afterwards.
            # NOTE: Use busybox compatible commands (shortoptions).
-RUN        yarn --production=false && \
+RUN        corepack enable && \
            yarn unlink clientnode; \
-           yarn install --force --production=false && \
+           yarn install && \
            yarn build && \
-           rm node_modules -f -r && \
-           yarn --production=true && \
+           yarn workspaces focus --production && \
            rm -f -r /tmp/*
 
 FROM       base as runtime
