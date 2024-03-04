@@ -32,7 +32,6 @@
     "build:types": "tsc --emitDeclarationOnly",
     "check:types": "tsc --noEmit",
     "clear": "rimraf --glob '*.js' '*.d.ts'",
-    "postversion": "yarn publish --non-interactive; git push --tags && git push",
     "serve": "./index.js",
     "start": "yarn serve",
     "update": "yarn version patch && yarn npm publish",
