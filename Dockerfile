@@ -26,7 +26,7 @@
 # endregion
 ARG        BASE_IMAGE
 
-FROM       ${BASE_IMAGE:-'node:current-alpine'} as base
+FROM       ${BASE_IMAGE:-'node:current-alpine'} AS base
 
 LABEL      maintainer="Torben Sickert <info@torben.website>"
 LABEL      Description="base" Vendor="thaibault products" Version="1.0"
@@ -39,7 +39,7 @@ RUN        mkdir --parents "$APPLICATION_PATH"
 
 WORKDIR    "$APPLICATION_PATH"
 
-FROM       base as build
+FROM       base AS build
 
 COPY       --link . "$APPLICATION_PATH"
 
@@ -53,7 +53,7 @@ RUN        corepack enable && \
            yarn workspaces focus --production && \
            rm -f -r /tmp/*
 
-FROM       base as runtime
+FROM       base AS runtime
 
 COPY       --from=build \
            --link \
