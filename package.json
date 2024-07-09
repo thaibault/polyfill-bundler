@@ -38,20 +38,20 @@
     "update:documentation": "documentation-website"
   },
   "devDependencies": {
-    "@babel/cli": "^7.24.6",
-    "@babel/core": "^7.24.6",
-    "@babel/plugin-transform-runtime": "^7.24.6",
-    "@babel/preset-env": "^7.24.6",
-    "@babel/preset-typescript": "^7.24.6",
+    "@babel/cli": "^7.24.7",
+    "@babel/core": "^7.24.7",
+    "@babel/plugin-transform-runtime": "^7.24.7",
+    "@babel/preset-env": "^7.24.7",
+    "@babel/preset-typescript": "^7.24.7",
     "@types/polyfill-library": "^3.108.4",
     "documentation-website": "^1.0.326",
-    "rimraf": "^5.0.7",
-    "typescript": "^5.4.5",
-    "webpack": "^5.91.0"
+    "rimraf": "^6.0.0",
+    "typescript": "^5.5.3",
+    "webpack": "^5.92.1"
   },
   "dependencies": {
-    "@babel/runtime": "^7.24.6",
-    "clientnode": "^3.0.1143",
+    "@babel/runtime": "^7.24.7",
+    "clientnode": "^3.0.1155",
     "polyfill-library": "^4.8.0"
   },
   "engines": {
