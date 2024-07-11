@@ -44,14 +44,14 @@
     "@babel/preset-env": "^7.24.7",
     "@babel/preset-typescript": "^7.24.7",
     "@types/polyfill-library": "^3.108.4",
-    "documentation-website": "^1.0.326",
-    "rimraf": "^6.0.0",
+    "documentation-website": "^1.0.328",
+    "rimraf": "^6.0.1",
     "typescript": "^5.5.3",
     "webpack": "^5.92.1"
   },
   "dependencies": {
     "@babel/runtime": "^7.24.7",
-    "clientnode": "^3.0.1155",
+    "clientnode": "^3.0.1161",
     "polyfill-library": "^4.8.0"
   },
   "engines": {

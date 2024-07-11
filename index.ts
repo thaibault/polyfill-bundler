@@ -3,8 +3,7 @@
 /** @module index */
 'use strict'
 // region import
-import Tools, {CloseEventNames} from 'clientnode'
-import {Mapping} from 'clientnode/type'
+import {CLOSE_EVENT_NAMES, Mapping, represent} from 'clientnode'
 import {
     createServer as createHttp2Server,
     Http2Server as HttpServer,
@@ -93,7 +92,7 @@ const instance:HttpServer = (
 
                 console.info(
                     'Apply polyfill configuration: "' +
-                    `${Tools.represent(configuration)}"`
+                    `${represent(configuration)}"`
                 )
                 // endregion
                 // region write response
@@ -117,15 +116,14 @@ const instance:HttpServer = (
     }
 )
 
-const port:number =
-    parseInt(process.argv[2] ?? process.env.PORT ?? 8080)
+const port = parseInt(process.argv[2] ?? process.env.PORT ?? 8080)
 
 instance.listen(
     port, () => console.info(`Listen on port ${port} for incoming requests.`)
 )
 
-for (const name of CloseEventNames)
-    process.on(name, ():void => {
+for (const name of CLOSE_EVENT_NAMES)
+    process.on(name, () => {
         console.info(`\nGot "${name}" signal: stopping server.`)
 
         instance.close(():void => console.info('Server stopped.'))
