@@ -2189,9 +2189,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"clientnode@npm:^3.0.1155":
-  version: 3.0.1155
-  resolution: "clientnode@npm:3.0.1155"
+"clientnode@npm:^3.0.1161":
+  version: 3.0.1161
+  resolution: "clientnode@npm:3.0.1161"
   peerDependencies:
     "@babel/runtime": "*"
     "@types/prop-types": "*"
@@ -2209,7 +2209,7 @@ __metadata:
       optional: true
     prop-types:
       optional: true
-  checksum: 10c0/ca50fa694db23036f6d5c62b874daa5f6bd8a4b1dcea96f83c5bd705c090f930ab554aefbcce64307bcea14c9914017b6a1353afb92b9a8420ff9d5023b76681
+  checksum: 10c0/9600b858318f4cbe70d0c1a9e44364bcc45ff6df1ba382ae353c498e028109d14505ca0a2ad76d485b3f0d282b8b6159271d41ea61a9418d89cd6cfa251b6bc9
   languageName: node
   linkType: hard
 
@@ -2321,12 +2321,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"documentation-website@npm:^1.0.326":
-  version: 1.0.326
-  resolution: "documentation-website@npm:1.0.326"
+"documentation-website@npm:^1.0.328":
+  version: 1.0.328
+  resolution: "documentation-website@npm:1.0.328"
   bin:
     documentation-website: build/deploy.js
-  checksum: 10c0/9e79827aac4256666b05c413f37018bf54ccd1dea2d1ba955eb232a7af37d134e1b7a85d9d8f316d7993bfc4107d3d17c6e762fca2876830146003c3820a8e68
+  checksum: 10c0/ed196f581a4ec055eb0283dcb89712af7d23ff2d6dece96a2a5140e5d93551cfb30366d64c47ba8604b7d168ae074dafebf30f21f4c5b23b5d3d30ca547aca00
   languageName: node
   linkType: hard
 
@@ -3338,10 +3338,10 @@ __metadata:
     "@babel/preset-typescript": "npm:^7.24.7"
     "@babel/runtime": "npm:^7.24.7"
     "@types/polyfill-library": "npm:^3.108.4"
-    clientnode: "npm:^3.0.1155"
-    documentation-website: "npm:^1.0.326"
+    clientnode: "npm:^3.0.1161"
+    documentation-website: "npm:^1.0.328"
     polyfill-library: "npm:^4.8.0"
-    rimraf: "npm:^6.0.0"
+    rimraf: "npm:^6.0.1"
     typescript: "npm:^5.5.3"
     webpack: "npm:^5.92.1"
   languageName: unknown
@@ -3524,14 +3524,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rimraf@npm:^6.0.0":
-  version: 6.0.0
-  resolution: "rimraf@npm:6.0.0"
+"rimraf@npm:^6.0.1":
+  version: 6.0.1
+  resolution: "rimraf@npm:6.0.1"
   dependencies:
     glob: "npm:^11.0.0"
+    package-json-from-dist: "npm:^1.0.0"
   bin:
     rimraf: dist/esm/bin.mjs
-  checksum: 10c0/32d07c542490db96efd515b27f857f45b71b2169a1b533052630d119034450d3afcf766adc2df43314378f9168407ef222d7d1104c48cc9d385e97b17964b3bf
+  checksum: 10c0/b30b6b072771f0d1e73b4ca5f37bb2944ee09375be9db5f558fcd3310000d29dfcfa93cf7734d75295ad5a7486dc8e40f63089ced1722a664539ffc0c3ece8c6
   languageName: node
   linkType: hard
 
