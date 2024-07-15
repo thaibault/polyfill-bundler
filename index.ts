@@ -128,7 +128,3 @@ for (const name of CLOSE_EVENT_NAMES)
 
         instance.close(():void => console.info('Server stopped.'))
     })
-// region vim modline
-// vim: set tabstop=4 shiftwidth=4 expandtab:
-// vim: foldmethod=marker foldmarker=region,endregion:
-// endregion
