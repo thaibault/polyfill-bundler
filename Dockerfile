@@ -79,7 +79,3 @@ EXPOSE     $PORT
 CMD        yarn start
 
 #ENTRYPOINT ...
-# region modline
-# vim: set tabstop=4 shiftwidth=4 expandtab filetype=dockerfile:
-# vim: foldmethod=marker foldmarker=region,endregion:
-# endregion
