@@ -126,5 +126,7 @@ for (const name of CLOSE_EVENT_NAMES)
     process.on(name, () => {
         console.info(`\nGot "${name}" signal: stopping server.`)
 
-        instance.close(():void => console.info('Server stopped.'))
+        instance.close(() => {
+            console.info('Server stopped.')
+        })
     })
