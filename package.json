@@ -28,30 +28,38 @@
   },
   "scripts": {
     "build": "yarn build:types; yarn build:plain",
+    "build:lint": "babel --plugins @babel/plugin-transform-runtime --presets @babel/preset-env,@babel/preset-typescript --source-maps inline --out-file eslint.config.js eslint.config.ts",
     "build:plain": "babel --plugins @babel/plugin-transform-runtime --presets @babel/preset-env,@babel/preset-typescript --source-maps inline --out-file index.js index.ts && sed --in-place --regexp-extended 's:^// *(#![^ ]+ ).*$:\\1node:' index.js && chmod +x index.js",
     "build:types": "tsc --emitDeclarationOnly",
     "check:types": "tsc --noEmit",
-    "clear": "rimraf --glob '*.js' '*.d.ts'",
+    "clear": "rimraf --glob '*.js'",
+    "lint": "yarn build:lint && eslint",
     "serve": "./index.js",
     "start": "yarn serve",
     "update": "yarn version patch && yarn npm publish",
     "update:documentation": "documentation-website"
   },
   "devDependencies": {
-    "@babel/cli": "^7.24.8",
+    "@babel/cli": "^7.25.6",
     "@babel/core": "^7.25.2",
-    "@babel/plugin-transform-runtime": "^7.24.7",
-    "@babel/preset-env": "^7.25.3",
+    "@babel/plugin-transform-runtime": "^7.25.4",
+    "@babel/preset-env": "^7.25.4",
     "@babel/preset-typescript": "^7.24.7",
+    "@eslint/js": "^9.9.1",
+    "@stylistic/eslint-plugin-ts": "^2.7.2",
+    "@types/eslint": "^9.6.1",
     "@types/polyfill-library": "^3.108.4",
-    "documentation-website": "^1.0.330",
+    "@typescript-eslint/parser": "^8.4.0",
+    "documentation-website": "^1.0.332",
+    "eslint": "^9.11.1",
     "rimraf": "^6.0.1",
-    "typescript": "^5.5.4",
-    "webpack": "^5.93.0"
+    "typescript": "^5.6.2",
+    "typescript-eslint": "^8.4.0",
+    "webpack": "^5.95.0"
   },
   "dependencies": {
-    "@babel/runtime": "^7.25.0",
-    "clientnode": "^3.0.1172",
+    "@babel/runtime": "^7.25.6",
+    "clientnode": "^3.0.1193",
     "polyfill-library": "^4.8.0"
   },
   "engines": {
