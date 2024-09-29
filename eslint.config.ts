@@ -6,6 +6,7 @@ import typescriptPlugin from '@stylistic/eslint-plugin-ts'
 export default typescript.config(
     {
         extends: [
+            // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
             eslintjs.configs.recommended,
             ...typescript.configs.strictTypeChecked,
             ...typescript.configs.strict,
@@ -14,6 +15,7 @@ export default typescript.config(
         files: ['*.ts'],
         languageOptions: {
             ecmaVersion: 'latest',
+            // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
             parser: typescriptParser,
             parserOptions: {
                 impliedStrict: true,
@@ -30,6 +32,6 @@ export default typescript.config(
         }
     },
     {
-        ignores: ["*.js"]
+        ignores: ['*.mjs', '*.js']
     }
 )

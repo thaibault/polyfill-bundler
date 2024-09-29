@@ -28,7 +28,7 @@
   },
   "scripts": {
     "build": "yarn build:types; yarn build:plain",
-    "build:lint": "babel --plugins @babel/plugin-transform-runtime --presets @babel/preset-env,@babel/preset-typescript --source-maps inline --out-file eslint.config.js eslint.config.ts",
+    "build:lint": "babel --presets @babel/preset-typescript --source-maps inline --out-file eslint.config.mjs eslint.config.ts",
     "build:plain": "babel --plugins @babel/plugin-transform-runtime --presets @babel/preset-env,@babel/preset-typescript --source-maps inline --out-file index.js index.ts && sed --in-place --regexp-extended 's:^// *(#![^ ]+ ).*$:\\1node:' index.js && chmod +x index.js",
     "build:types": "tsc --emitDeclarationOnly",
     "check:types": "tsc --noEmit",
