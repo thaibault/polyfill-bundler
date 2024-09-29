@@ -68,10 +68,12 @@ export const requestHandler = async (
             // region build feature options
             const featureOptions: Mapping<{ flags: Array<Flag> }> = {}
             for (const feature of features) {
-                const configuration: [string, ...Array<Flag>] =
+                const configuration =
                     feature.split('|') as [string, ...Array<Flag>]
 
-                featureOptions[configuration[0]] = {
+                const option = configuration[0]
+
+                featureOptions[option] = {
                     flags: configuration.length > 1 ?
                         configuration[1] as unknown as Array<Flag> :
                         flags
