@@ -45,21 +45,21 @@
     "@babel/plugin-transform-runtime": "^7.25.7",
     "@babel/preset-env": "^7.25.8",
     "@babel/preset-typescript": "^7.25.7",
-    "@eslint/js": "^9.12.0",
+    "@eslint/js": "^9.13.0",
     "@stylistic/eslint-plugin-ts": "^2.9.0",
     "@types/eslint": "^9.6.1",
     "@types/polyfill-library": "^3.108.4",
-    "@typescript-eslint/parser": "^8.9.0",
-    "documentation-website": "^1.0.335",
-    "eslint": "^9.12.0",
+    "@typescript-eslint/parser": "^8.10.0",
+    "documentation-website": "^1.0.336",
+    "eslint": "^9.13.0",
     "rimraf": "^6.0.1",
     "typescript": "^5.6.3",
-    "typescript-eslint": "^8.9.0",
+    "typescript-eslint": "^8.10.0",
     "webpack": "^5.95.0"
   },
   "dependencies": {
     "@babel/runtime": "^7.25.7",
-    "clientnode": "^3.0.1205",
+    "clientnode": "^3.0.1210",
     "polyfill-library": "^4.8.0"
   },
   "engines": {
