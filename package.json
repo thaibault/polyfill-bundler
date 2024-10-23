@@ -59,7 +59,7 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.25.9",
-    "clientnode": "^3.0.1216",
+    "clientnode": "^3.0.1217",
     "polyfill-library": "^4.8.0"
   },
   "engines": {
