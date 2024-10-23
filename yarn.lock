@@ -2387,9 +2387,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"clientnode@npm:^3.0.1216":
-  version: 3.0.1216
-  resolution: "clientnode@npm:3.0.1216"
+"clientnode@npm:^3.0.1217":
+  version: 3.0.1217
+  resolution: "clientnode@npm:3.0.1217"
   peerDependencies:
     "@babel/runtime": "*"
     "@types/prop-types": "*"
@@ -2407,7 +2407,7 @@ __metadata:
       optional: true
     prop-types:
       optional: true
-  checksum: 10c0/11c67b3bc9b0d031bda01492c110144125622a46c212cabde5d90d159c6487b0a2ab5676abc50014205d8487a0722f989f550d84c2ae75dacfa53f3a9e1e30e2
+  checksum: 10c0/bea1622707640cb5f7258c81861c934695191ca8652db128214f9984c138c3e7a4ccaf45a14b3c394a675e406fbccb5b307e5c062cb218bf13d153cf314596a6
   languageName: node
   linkType: hard
 
@@ -3934,7 +3934,7 @@ __metadata:
     "@types/eslint": "npm:^9.6.1"
     "@types/polyfill-library": "npm:^3.108.4"
     "@typescript-eslint/parser": "npm:^8.11.0"
-    clientnode: "npm:^3.0.1216"
+    clientnode: "npm:^3.0.1217"
     documentation-website: "npm:^1.0.336"
     eslint: "npm:^9.13.0"
     polyfill-library: "npm:^4.8.0"
