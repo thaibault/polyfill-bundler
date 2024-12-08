@@ -40,26 +40,26 @@
     "update:documentation": "documentation-website"
   },
   "devDependencies": {
-    "@babel/cli": "^7.25.9",
+    "@babel/cli": "^7.26.4",
     "@babel/core": "^7.26.0",
     "@babel/plugin-transform-runtime": "^7.25.9",
     "@babel/preset-env": "^7.26.0",
     "@babel/preset-typescript": "^7.26.0",
-    "@eslint/js": "^9.15.0",
+    "@eslint/js": "^9.16.0",
     "@stylistic/eslint-plugin-ts": "^2.11.0",
     "@types/eslint": "^9.6.1",
     "@types/polyfill-library": "^3.108.4",
-    "@typescript-eslint/parser": "^8.16.0",
-    "documentation-website": "^1.0.339",
-    "eslint": "^9.15.0",
+    "@typescript-eslint/parser": "^8.17.0",
+    "documentation-website": "^1.0.340",
+    "eslint": "^9.16.0",
     "rimraf": "^6.0.1",
     "typescript": "^5.7.2",
-    "typescript-eslint": "^8.16.0",
-    "webpack": "^5.96.1"
+    "typescript-eslint": "^8.17.0",
+    "webpack": "^5.97.1"
   },
   "dependencies": {
     "@babel/runtime": "^7.26.0",
-    "clientnode": "^3.0.1232",
+    "clientnode": "^3.0.1237",
     "polyfill-library": "^4.8.0"
   },
   "engines": {
