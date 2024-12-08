@@ -50,7 +50,7 @@
     "@types/eslint": "^9.6.1",
     "@types/polyfill-library": "^3.108.4",
     "@typescript-eslint/parser": "^8.17.0",
-    "documentation-website": "^1.0.340",
+    "documentation-website": "^1.0.341",
     "eslint": "^9.16.0",
     "rimraf": "^6.0.1",
     "typescript": "^5.7.2",
@@ -59,7 +59,7 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.26.0",
-    "clientnode": "^3.0.1237",
+    "clientnode": "^3.0.1249",
     "polyfill-library": "^4.8.0"
   },
   "engines": {
