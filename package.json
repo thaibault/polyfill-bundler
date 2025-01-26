@@ -36,7 +36,6 @@
     "lint": "yarn build:lint && eslint",
     "serve": "./index.js",
     "start": "yarn serve",
-    "update": "yarn version patch && yarn npm publish",
     "update:documentation": "documentation-website"
   },
   "devDependencies": {
