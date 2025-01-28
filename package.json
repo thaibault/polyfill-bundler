@@ -1,6 +1,6 @@
 {
   "name": "polyfill-bundler",
-  "version": "1.0.102",
+  "version": "1.0.103",
   "license": "CC-BY-3.0",
   "description": "Polyfill service.",
   "homepage": "https://torben.website/polyfill-bundler",
@@ -36,7 +36,6 @@
     "lint": "yarn build:lint && eslint",
     "serve": "./index.js",
     "start": "yarn serve",
-    "update": "yarn version patch && yarn npm publish",
     "update:documentation": "documentation-website"
   },
   "devDependencies": {
