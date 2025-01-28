@@ -5,8 +5,11 @@ on:
   push:
     tags:
       - 'v[0-9]+.[0-9]+.[0-9]+'
+  # Runs when a new version was prepared.
+  repository_dispatch:
+    types: [prepare-release-event]
+  # Run every Sunday at 2am o'clock.
   schedule:
-    # Run every Sunday at 2am o'clock.
     - cron: '0 2 * * 0'
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -35,6 +38,7 @@ env:
 jobs:
   main:
     runs-on: ubuntu-latest
+
     permissions:
       contents: read
       packages: write
@@ -43,7 +47,16 @@ jobs:
       - uses: thaibault/build-image-push-action@main
         with:
           name: ${{ env.IMAGE_NAME }}
-          tags: ${{ inputs.tags || 'CURRENT_TAG_OR_BRANCH latest' }}
+          tags: |
+            ${{
+              inputs.tags ||
+              format(
+                '{0} latest',
+                github.event.client_payload.version ||
+                github.head_ref ||
+                github.ref_name
+              )
+            }}
 
           architecture: ${{ inputs.architecture || 'all' }}
           build-args: |
@@ -59,5 +72,5 @@ jobs:
           alternate-password: ${{ secrets.DOCKERHUB_TOKEN }}
 
           registry: ${{ env.REGISTRY }}
-          username: ${{ github.actor }}
+          username: ${{ github.repository_owner }}
           password: ${{ secrets.GITHUB_TOKEN }}
