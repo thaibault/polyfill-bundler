@@ -48,12 +48,12 @@
     "@stylistic/eslint-plugin-ts": "^4.2.0",
     "@types/eslint": "^9.6.1",
     "@types/polyfill-library": "^3.108.4",
-    "@typescript-eslint/parser": "^8.26.1",
+    "@typescript-eslint/parser": "^8.27.0",
     "documentation-website": "^1.0.345",
     "eslint": "^9.22.0",
     "rimraf": "^6.0.1",
     "typescript": "^5.8.2",
-    "typescript-eslint": "^8.26.1",
+    "typescript-eslint": "^8.27.0",
     "webpack": "^5.98.0"
   },
   "dependencies": {
