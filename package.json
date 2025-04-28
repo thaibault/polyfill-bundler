@@ -39,26 +39,26 @@
     "update:documentation": "documentation-website"
   },
   "devDependencies": {
-    "@babel/cli": "^7.26.4",
+    "@babel/cli": "^7.27.0",
     "@babel/core": "^7.26.10",
     "@babel/plugin-transform-runtime": "^7.26.10",
     "@babel/preset-env": "^7.26.9",
-    "@babel/preset-typescript": "^7.26.0",
-    "@eslint/js": "^9.22.0",
+    "@babel/preset-typescript": "^7.27.0",
+    "@eslint/js": "^9.25.1",
     "@stylistic/eslint-plugin-ts": "^4.2.0",
     "@types/eslint": "^9.6.1",
     "@types/polyfill-library": "^3.108.4",
-    "@typescript-eslint/parser": "^8.27.0",
+    "@typescript-eslint/parser": "^8.31.0",
     "documentation-website": "^1.0.345",
-    "eslint": "^9.22.0",
+    "eslint": "^9.25.1",
     "rimraf": "^6.0.1",
-    "typescript": "^5.8.2",
-    "typescript-eslint": "^8.27.0",
-    "webpack": "^5.98.0"
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.31.0",
+    "webpack": "^5.99.7"
   },
   "dependencies": {
-    "@babel/runtime": "^7.26.10",
-    "clientnode": "^3.0.1274",
+    "@babel/runtime": "^7.27.0",
+    "clientnode": "^3.0.1277",
     "polyfill-library": "^4.8.0"
   },
   "engines": {
@@ -66,5 +66,5 @@
     "npm": ">=10",
     "yarn": ">=4"
   },
-  "packageManager": "yarn@4.6.0+sha512.5383cc12567a95f1d668fbe762dfe0075c595b4bfff433be478dbbe24e05251a8e8c3eb992a986667c1d53b6c3a9c85b8398c35a960587fbd9fa3a0915406728"
+  "packageManager": "yarn@4.9.1+sha512.f95ce356460e05be48d66401c1ae64ef84d163dd689964962c6888a9810865e39097a5e9de748876c2e0bf89b232d583c33982773e9903ae7a76257270986538"
 }
