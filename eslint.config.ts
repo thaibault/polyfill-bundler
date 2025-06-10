@@ -1,7 +1,7 @@
 import typescript from 'typescript-eslint'
 import eslintjs from '@eslint/js'
 import typescriptParser from '@typescript-eslint/parser'
-import typescriptPlugin from '@stylistic/eslint-plugin-ts'
+import javascriptPlugin from '@stylistic/eslint-plugin'
 
 export default typescript.config(
     {
@@ -24,7 +24,7 @@ export default typescript.config(
             sourceType: 'module'
         },
         plugins: {
-            '@stylistic': typescriptPlugin
+            '@stylistic': javascriptPlugin
         },
 
         rules: {
