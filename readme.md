@@ -23,6 +23,7 @@ Project status
 
 [![build push image](https://img.shields.io/github/actions/workflow/status/thaibault/polyfill-bundler/build-image-and-push-periodically-2.yaml?label=build%20push%20image&style=for-the-badge)](https://github.com/thaibault/polyfill-bundler/actions/workflows/build-image-and-push-periodically-2.yaml)
 
+[![deploy documentation website](https://img.shields.io/github/actions/workflow/status/thaibault/polyfill-bundler/deploy-documentation-website.yaml?label=deploy%20documentation%20website&style=for-the-badge)](https://github.com/thaibault/polyfill-bundler/actions/workflows/deploy-documentation-website.yaml)
 [![documentation website](https://img.shields.io/website-up-down-green-red/https/torben.website/polyfill-bundler.svg?label=documentation-website&style=for-the-badge)](https://torben.website/polyfill-bundler)
 
 Use case
