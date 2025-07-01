@@ -2409,12 +2409,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"documentation-website@npm:^1.0.389":
-  version: 1.0.389
-  resolution: "documentation-website@npm:1.0.389"
+"documentation-website@npm:^1.0.390":
+  version: 1.0.390
+  resolution: "documentation-website@npm:1.0.390"
   bin:
     documentation-website: build/deploy.js
-  checksum: 10c0/efb4d8ed8e42c799f733b7daa3ab108de9f2a021c36affe8668f9f2f29114c257f7f6809ac9d58c1c7005a43b57efff593639adf6f4ab43eb887c67f1a3e7531
+  checksum: 10c0/4d903376f29f554888c31314b0754e89c2344c4743d3147469bbe6a5bfbac535be55fec338e74ab8b327e70097c1c99490ea8344642d65421e306957e3629ffd
   languageName: node
   linkType: hard
 
@@ -3748,7 +3748,7 @@ __metadata:
     "@types/polyfill-library": "npm:^3.108.4"
     "@typescript-eslint/parser": "npm:^8.35.1"
     clientnode: "npm:^3.0.1298"
-    documentation-website: "npm:^1.0.389"
+    documentation-website: "npm:^1.0.390"
     eslint: "npm:^9.30.0"
     polyfill-library: "npm:^4.8.0"
     rimraf: "npm:^6.0.1"

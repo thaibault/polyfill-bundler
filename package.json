@@ -49,7 +49,7 @@
     "@types/eslint": "^9.6.1",
     "@types/polyfill-library": "^3.108.4",
     "@typescript-eslint/parser": "^8.35.1",
-    "documentation-website": "^1.0.389",
+    "documentation-website": "^1.0.390",
     "eslint": "^9.30.0",
     "rimraf": "^6.0.1",
     "typescript": "^5.8.3",
