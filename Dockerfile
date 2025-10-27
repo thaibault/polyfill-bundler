@@ -52,7 +52,8 @@ COPY       --link . "$APPLICATION_PATH"
            # Install dev dependencies build and slice out dev dependencies
            # afterwards.
            # NOTE: Use busybox compatible commands (shortoptions).
-RUN        corepack enable && \
+RUN        npm install -g corepack@latest && \
+           corepack enable && \
            yarn unlink clientnode; \
            yarn install && \
            yarn build && \
