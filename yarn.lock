@@ -2130,14 +2130,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"caniuse-lite@npm:^1.0.30001669":
-  version: 1.0.30001726
-  resolution: "caniuse-lite@npm:1.0.30001726"
-  checksum: 10c0/2c5f91da7fd9ebf8c6b432818b1498ea28aca8de22b30dafabe2a2a6da1e014f10e67e14f8e68e872a0867b6b4cd6001558dde04e3ab9770c9252ca5c8849d0e
-  languageName: node
-  linkType: hard
-
-"caniuse-lite@npm:^1.0.30001751":
+"caniuse-lite@npm:^1.0.30001669, caniuse-lite@npm:^1.0.30001751":
   version: 1.0.30001751
   resolution: "caniuse-lite@npm:1.0.30001751"
   checksum: 10c0/c3f2d448f3569004ace160fd9379ea0def8e7a7bc6e65611baadb57d24e1f418258647a6210e46732419f5663e2356c22aa841f92449dd3849eb6471bb7ad592
@@ -2180,9 +2173,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"clientnode@npm:^3.0.1314":
-  version: 3.0.1314
-  resolution: "clientnode@npm:3.0.1314"
+"clientnode@npm:^3.0.1315":
+  version: 3.0.1315
+  resolution: "clientnode@npm:3.0.1315"
   peerDependencies:
     "@babel/runtime": "*"
     "@types/prop-types": "*"
@@ -2200,7 +2193,7 @@ __metadata:
       optional: true
     prop-types:
       optional: true
-  checksum: 10c0/edb6ef4e8d9e874110aa044a1ded8d300ae79d01b51fd0ecfce73ddcd472865544268650f22e38fea26568fafee0669d3438c8a608153178617664eb85c65944
+  checksum: 10c0/9094b8c8d5988cd8a037ebc06a977f937c36397f7e51c7e96daab469cc3a90aacd33f53714dc54ceb82ee5b644a0f01e772e7dd3e95387b69b3f042740bc0034
   languageName: node
   linkType: hard
 
@@ -3519,7 +3512,7 @@ __metadata:
     "@types/eslint": "npm:^9.6.1"
     "@types/polyfill-library": "npm:^3.108.4"
     "@typescript-eslint/parser": "npm:^8.46.2"
-    clientnode: "npm:^3.0.1314"
+    clientnode: "npm:^3.0.1315"
     documentation-website: "npm:^1.0.394"
     eslint: "npm:^9.38.0"
     polyfill-library: "npm:^4.8.0"
