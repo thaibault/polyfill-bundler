@@ -8,8 +8,9 @@ import javascriptPlugin from '@stylistic/eslint-plugin'
 export const config = defineConfig(
     {
         extends: [
-            // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
+            /* eslint-disable @typescript-eslint/no-unsafe-member-access */
             eslintjs.configs.recommended,
+            /* eslint-enable @typescript-eslint/no-unsafe-member-access */
             ...typescript.configs.strictTypeChecked,
             ...typescript.configs.strict,
             ...typescript.configs.stylistic
