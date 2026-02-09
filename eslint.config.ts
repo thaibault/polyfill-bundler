@@ -30,7 +30,8 @@ export const config = defineConfig(
         },
 
         rules: {
-            '@typescript-eslint/array-type': ['error', {default: 'generic'}]
+            '@typescript-eslint/array-type': ['error', {default: 'generic'}],
+            '@typescript-eslint/no-deprecated': 'off',
         }
     },
     {
