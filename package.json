@@ -48,16 +48,16 @@
     "@stylistic/eslint-plugin": "^5.10.0",
     "@types/eslint": "^9.6.1",
     "@types/polyfill-library": "^3.108.4",
-    "@typescript-eslint/parser": "^8.57.2",
+    "@typescript-eslint/parser": "^8.58.0",
     "documentation-website": "^1.0.401",
-    "eslint": "^10.1.0",
+    "eslint": "^10.2.0",
     "rimraf": "^6.1.3",
     "typescript": "^6.0.2",
-    "typescript-eslint": "^8.57.2"
+    "typescript-eslint": "^8.58.0"
   },
   "dependencies": {
     "@babel/runtime": "^7.29.2",
-    "clientnode": "^4.0.1364",
+    "clientnode": "^4.0.1372",
     "polyfill-library": "^4.8.0"
   },
   "engines": {
