@@ -7,7 +7,7 @@
 # License
 # -------
 
-# This library written by Torben Sickert stand under a creative commons naming
+# This library written by Torben Sickert stands under a creative commons naming
 # 4.0 unported license.
 # See https://creativecommons.org/licenses/by/3.0/deed.de
 
@@ -41,16 +41,10 @@ ENV        APPLICATION_PATH=/application/
 ENV        PORT=8080
 ENV        NODE_ENV=production
 
-RUN        mkdir --parents "$APPLICATION_PATH"
-
+COPY       --link . "$APPLICATION_PATH"
 WORKDIR    "$APPLICATION_PATH"
 
-FROM       base AS build
-
-COPY       --link . "$APPLICATION_PATH"
-
-           # Install dev dependencies build and slice out dev dependencies
-           # afterwards.
+           # Install package manager.
            # NOTE: Use busybox compatible commands (shortoptions).
 RUN        path="${APPLICATION_PATH}certificate.pem" && \
            if [ -f "$path" ]; then \
@@ -58,15 +52,20 @@ RUN        path="${APPLICATION_PATH}certificate.pem" && \
                export NODE_EXTRA_CA_CERTS="$path"; \
            fi && \
            npm uninstall -g yarn && \
-           rm /usr/local/bin/yarn /usr/local/bin/yarnpkg; \
+           rm /usr/local/bin/yarn /usr/local/bin/yarnpkg &>/dev/null || true; \
            npm install -g corepack@latest && \
            corepack enable && \
            corepack install && \
-           yarn unlink clientnode; \
-           yarn install && \
-           yarn build && \
-           yarn workspaces focus --production && \
            rm -f -r /tmp/*
+
+FROM       base AS build
+           # Install dev dependencies build and ignore those for production
+           # build.
+RUN        yarn unlink clientnode
+RUN        yarn install
+RUN        yarn build
+RUN        yarn unlink clientnode
+RUN        yarn workspaces focus --production
 
 FROM       base AS runtime
 
