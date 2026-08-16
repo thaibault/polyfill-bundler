@@ -10,12 +10,12 @@
         "forceConsistentCasingInFileNames": true,
         "isolatedModules": true,
         "lib": ["DOM", "ESNext"],
-        "module": "NodeNext",
-        "moduleResolution": "nodenext",
+        "module": "esnext",
+        "moduleResolution": "bundler",
         "resolveJsonModule": true,
         "skipLibCheck": true,
         "strict": true,
         "target": "esnext"
     },
-    "include": ["*.ts"]
+    "include": ["*.ts", "*.d.ts"]
 }

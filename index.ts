@@ -3,13 +3,15 @@
 /** @module index */
 'use strict'
 // region import
-import {CLOSE_EVENT_NAMES, Mapping, represent} from 'clientnode'
-import {
-    createServer as createHttp2Server,
+import type {Mapping} from 'clientnode'
+import type {
     Http2Server as HttpServer,
     Http2ServerResponse as HTTPServerResponse,
     Http2ServerRequest as HTTPServerRequest
 } from 'http2'
+
+import {CLOSE_EVENT_NAMES, represent} from 'clientnode'
+import {createServer as createHttp2Server} from 'http2'
 import {createServer} from 'http'
 import polyfillLibrary from 'polyfill-library'
 import url from 'url'
@@ -66,7 +68,7 @@ export const requestHandler = async (
                     'polyfill'
             // endregion
             // region build feature options
-            const featureOptions: Mapping<{ flags: Array<Flag> }> = {}
+            const featureOptions: Mapping<{flags: Array<Flag>}> = {}
             for (const feature of features) {
                 const configuration =
                     feature.split('|') as [string, ...Array<Flag>]
@@ -114,7 +116,7 @@ export const requestHandler = async (
     }
 }
 
-const instance:HttpServer = (
+const instance: HttpServer = (
     createServer as unknown as typeof createHttp2Server
 )((...parameters) => {
     void requestHandler(...parameters)
