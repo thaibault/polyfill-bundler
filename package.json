@@ -1,8 +1,7 @@
 {
   "name": "polyfill-bundler",
-  "version": "1.0.129",
-  "license": "CC-BY-3.0",
   "version": "1.0.128",
+  "license": "CC-BY-3.0",
   "description": "Polyfill service.",
   "keywords": [
     "polyfill",
@@ -10,7 +9,6 @@
     "service"
   ],
   "homepage": "https://torben.website/polyfill-bundler",
-  "license": "CC-BY-3.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/thaibault/polyfill-bundler"
@@ -33,8 +31,7 @@
     "update:documentation": "web-documentation"
   },
   "dependencies": {
-    "@babel/runtime": "^7.29.2",
-    "clientnode": "^4.0.1396",
+    "clientnode": "^4.0.1484",
     "polyfill-library": "^4.8.0"
   },
   "devDependencies": {
