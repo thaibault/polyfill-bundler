@@ -2,29 +2,24 @@
   "name": "polyfill-bundler",
   "version": "1.0.129",
   "license": "CC-BY-3.0",
+  "version": "1.0.128",
   "description": "Polyfill service.",
-  "homepage": "https://torben.website/polyfill-bundler",
-  "webDocumentation": {
-    "languages": [
-      "deDE",
-      "enUS"
-    ],
-    "tagline": "",
-    "trackingCode": ""
-  },
   "keywords": [
     "polyfill",
     "bundle",
     "service"
   ],
-  "files": [
-    "index.d.ts",
-    "index.js"
-  ],
+  "homepage": "https://torben.website/polyfill-bundler",
+  "license": "CC-BY-3.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/thaibault/polyfill-bundler"
   },
+  "type": "module",
+  "files": [
+    "index.d.ts",
+    "index.js"
+  ],
   "scripts": {
     "build": "yarn build:types; yarn build:plain",
     "build:lint": "babel --presets @babel/preset-typescript --source-maps inline --out-file eslint.config.js eslint.config.ts",
@@ -36,6 +31,11 @@
     "serve": "./index.js",
     "start": "yarn serve",
     "update:documentation": "web-documentation"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.29.2",
+    "clientnode": "^4.0.1396",
+    "polyfill-library": "^4.8.0"
   },
   "devDependencies": {
     "@babel/cli": "^8.0.4",
@@ -53,15 +53,18 @@
     "typescript-eslint": "^8.67.0",
     "web-documentation": "^1.0.45"
   },
-  "dependencies": {
-    "clientnode": "^4.0.1484",
-    "polyfill-library": "^4.8.0"
-  },
   "engines": {
     "node": ">=24",
     "npm": ">=11",
     "yarn": ">=4"
   },
-  "type": "module",
+  "webDocumentation": {
+    "languages": [
+      "deDE",
+      "enUS"
+    ],
+    "tagline": "",
+    "trackingCode": ""
+  },
   "packageManager": "yarn@4.14.1+sha512.64df448055b2d37ba269d7db535a469b8da93f8ef1140c25fd7a83c00a8fbaacb214ca0e02553b92a2c54cef78bb67d0b4817fab02001df0e24fac0faccc3b42"
 }
