@@ -1,7 +1,6 @@
 {
   "name": "polyfill-bundler",
   "version": "1.0.129",
-  "license": "CC-BY-3.0",
   "description": "Polyfill service.",
   "keywords": [
     "polyfill",
@@ -9,6 +8,7 @@
     "service"
   ],
   "homepage": "https://torben.website/polyfill-bundler",
+  "license": "CC-BY-3.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/thaibault/polyfill-bundler"
@@ -51,8 +51,8 @@
     "web-documentation": "^1.0.45"
   },
   "engines": {
-    "node": ">=24",
-    "npm": ">=11",
+    "node": ">=26",
+    "npm": ">=12",
     "yarn": ">=4"
   },
   "webDocumentation": {
