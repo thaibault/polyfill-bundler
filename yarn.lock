@@ -2406,7 +2406,7 @@ __metadata:
     rimraf: "npm:^6.1.3"
     typescript: "npm:^6.0.3"
     typescript-eslint: "npm:^8.67.0"
-    web-documentation: "npm:^1.0.45"
+    web-documentation: "npm:^1.0.49"
   languageName: unknown
   linkType: soft
 
@@ -2761,12 +2761,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"web-documentation@npm:^1.0.45":
-  version: 1.0.45
-  resolution: "web-documentation@npm:1.0.45"
+"web-documentation@npm:^1.0.49":
+  version: 1.0.49
+  resolution: "web-documentation@npm:1.0.49"
   bin:
     web-documentation: build/deploy.js
-  checksum: 10c0/e0781f5c8a9a345a0168d91a912930ebdc79ae192802e9bb7a55bec5cebe825aa9bf64f09d5bb19fe18a4ed285e3e0969cbd7c975ab75254729bf0e64415382d
+  checksum: 10c0/cbc11c7146a50b7e378a5fba17e5747d5eb85e2182c746d0cb80390b52b785062672b7ce240f88acf2a09517f3e82d9a591b9f41066bf44883f267efa2a87938
   languageName: node
   linkType: hard
 
