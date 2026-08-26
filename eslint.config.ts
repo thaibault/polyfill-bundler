@@ -35,7 +35,12 @@ export const config = defineConfig(
         }
     },
     {
-        ignores: ['*.mjs', '*.js']
+        ignores: [
+            '*.mjs',
+            '*.js',
+            '**/*.d.ts',
+            '!**/declarations.d.ts'
+        ]
     }
 )
 
