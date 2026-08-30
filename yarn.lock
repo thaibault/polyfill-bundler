@@ -1893,9 +1893,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"clientnode@npm:^4.0.1500":
-  version: 4.0.1500
-  resolution: "clientnode@npm:4.0.1500"
+"clientnode@npm:^4.0.1501":
+  version: 4.0.1501
+  resolution: "clientnode@npm:4.0.1501"
   peerDependencies:
     "@types/prop-types": "*"
     node-fetch: "*"
@@ -1907,7 +1907,7 @@ __metadata:
       optional: true
     prop-types:
       optional: true
-  checksum: 10c0/c701e5a43662018b9073fd14074aa84f475e1e044dfd13bee0a9bb20297cf6d6047bc6452177a68b608b1449162ce5c1f9c75b27ddb67f9deefb04c4e3896836
+  checksum: 10c0/edc223d102ae14597c7f9527c8b420f149c94eed31418e26a86da13e5112780fc9716e13465653359bf959d1bd7f4af5579af8dde262ef8623d0cc6f4f909536
   languageName: node
   linkType: hard
 
@@ -2622,13 +2622,13 @@ __metadata:
     "@types/polyfill-library": "npm:^3.108.4"
     "@typescript-eslint/parser": "npm:^8.68.0"
     "@typescript/native": "npm:typescript@^7.0.2"
-    clientnode: "npm:^4.0.1500"
+    clientnode: "npm:^4.0.1501"
     eslint: "npm:^10.9.1"
     polyfill-library: "npm:^4.8.0"
     rimraf: "npm:^6.1.3"
     typescript: "npm:@typescript/typescript6@^6.0.2"
     typescript-eslint: "npm:^8.68.0"
-    web-documentation: "npm:^1.0.51"
+    web-documentation: "npm:^1.0.52"
   languageName: unknown
   linkType: soft
 
@@ -2985,12 +2985,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"web-documentation@npm:^1.0.51":
-  version: 1.0.51
-  resolution: "web-documentation@npm:1.0.51"
+"web-documentation@npm:^1.0.52":
+  version: 1.0.52
+  resolution: "web-documentation@npm:1.0.52"
   bin:
     web-documentation: build/deploy.js
-  checksum: 10c0/2701c8d95fd82a3badc040c65c86d8c5dc15cfed486bd8665d09a6da5e656c912f5647916e0f3a1d90edbf16ef366b3be69033181515ab84e8b100d5610e1ecd
+  checksum: 10c0/8a707124606c21fc9cdb0a6eb760fd397de617a586cfc319dd067d228d777432a5ba051b4fd9487365e349c3ac8671c953452dd63af078bb0242b22013637b1f
   languageName: node
   linkType: hard
 
