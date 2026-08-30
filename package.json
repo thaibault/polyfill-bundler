@@ -31,7 +31,7 @@
     "update:documentation": "web-documentation"
   },
   "dependencies": {
-    "clientnode": "^4.0.1500",
+    "clientnode": "^4.0.1501",
     "polyfill-library": "^4.8.0"
   },
   "devDependencies": {
@@ -49,7 +49,7 @@
     "rimraf": "^6.1.3",
     "typescript": "npm:@typescript/typescript6@^6.0.2",
     "typescript-eslint": "^8.68.0",
-    "web-documentation": "^1.0.51"
+    "web-documentation": "^1.0.52"
   },
   "engines": {
     "node": ">=26",
