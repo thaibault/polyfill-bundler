@@ -65,7 +65,7 @@ npm install polyfill-bundler
 Example
 -------
 
-```JavaScript
+```HTML
 <script
     src="https://polyfill.your.domain/polyfill.js?features=AbortController%2CArray.from"
 ></script>
