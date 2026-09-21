@@ -1,7 +1,7 @@
 <!-- !/usr/bin/env markdown
 -*- coding: utf-8 -*-
 region header
-Copyright Torben Sickert (info["~at~"]torben.website) 16.12.2012
+Copyright Torben Sickert (info["~at~"]tsickert.com) 16.12.2012
 
 License
 -------
@@ -25,7 +25,7 @@ Project Status
 [![build push image](https://img.shields.io/github/actions/workflow/status/thaibault/polyfill-bundler/build-image-and-push-periodically-2.yaml?label=build%20push%20image&style=for-the-badge)](https://github.com/thaibault/polyfill-bundler/actions/workflows/build-image-and-push-periodically-2.yaml)
 
 [![deploy web documentation](https://img.shields.io/github/actions/workflow/status/thaibault/polyfill-bundler/deploy-web-documentation.yaml?label=deploy%20web%20documentation&style=for-the-badge)](https://github.com/thaibault/polyfill-bundler/actions/workflows/deploy-web-documentation.yaml)
-[![web documentation](https://img.shields.io/website-up-down-green-red/https/torben.website/polyfill-bundler.svg?label=web-documentation&style=for-the-badge)](https://torben.website/polyfill-bundler)
+[![web documentation](https://img.shields.io/website-up-down-green-red/https/tsickert.com/polyfill-bundler.svg?label=web-documentation&style=for-the-badge)](https://tsickert.com/polyfill-bundler)
 
 <!--|deDE:Verwendung-->
 Use case

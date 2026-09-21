@@ -7,7 +7,7 @@
     "bundle",
     "service"
   ],
-  "homepage": "https://torben.website/polyfill-bundler",
+  "homepage": "https://tsickert.com/polyfill-bundler",
   "license": "CC-BY-3.0",
   "repository": {
     "type": "git",
@@ -31,7 +31,7 @@
     "update:documentation": "web-documentation"
   },
   "dependencies": {
-    "clientnode": "^4.0.1518",
+    "clientnode": "^4.0.1521",
     "polyfill-library": "^4.8.0"
   },
   "devDependencies": {
