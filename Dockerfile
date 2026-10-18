@@ -1,8 +1,8 @@
 # syntax=docker/dockerfile-upstream:master-labs
 # region header
-# [Project page](https://torben.website/polyfill-bundler)
+# [Project page](https://tsickert.com/polyfill-bundler)
 
-# Copyright Torben Sickert (info["~at~"]torben.website) 16.12.2012
+# Copyright Torben Sickert (info["~at~"]tsickert.com) 16.12.2012
 
 # License
 # -------
@@ -30,7 +30,7 @@ FROM       ${BASE_IMAGE:-'node:current-alpine'} AS base
 
 LABEL      org.opencontainers.image.title='Implementations of the polyfill bundler service.'
 LABEL      org.opencontainers.image.description='Serves a bundle determined by the provided query.'
-LABEL      org.opencontainers.image.authors='Torben Sickert <info@torben.website> (@thaibault)'
+LABEL      org.opencontainers.image.authors='Torben Sickert <info@tsickert.com> (@thaibault)'
 LABEL      org.opencontainers.image.url=https://github.com/thaibault/polyfill-bundler/pkgs/container/polyfill-bundler
 LABEL      org.opencontainers.image.documentation=https://github.com/thaibault/polyfill-bundler/blob/main/readme.md
 LABEL      org.opencontainers.image.source=https://github.com/thaibault/polyfill-bundler
