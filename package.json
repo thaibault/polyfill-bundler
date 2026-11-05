@@ -14,6 +14,7 @@
     "url": "https://github.com/thaibault/polyfill-bundler"
   },
   "type": "module",
+  "bin": "index.js",
   "files": [
     "index.d.ts",
     "index.js"
@@ -26,30 +27,31 @@
     "check:types": "tsc --noEmit",
     "clear": "rimraf --glob 'eslint.config.d.ts' 'index.d.ts' '*.js'",
     "lint": "yarn build:lint && eslint",
+    "prepare": "yarn build",
     "serve": "./index.js",
     "start": "yarn serve",
     "update:documentation": "web-documentation"
   },
   "dependencies": {
-    "clientnode": "^4.0.1524",
+    "clientnode": "^4.0.1531",
     "polyfill-library": "^4.8.0"
   },
   "devDependencies": {
-    "@babel/cli": "^8.0.6",
-    "@babel/core": "^8.0.9",
+    "@babel/cli": "^8.1.0",
+    "@babel/core": "^8.1.0",
     "@babel/preset-env": "^8.0.7",
     "@babel/preset-typescript": "^8.0.7",
     "@eslint/js": "^10.0.1",
     "@stylistic/eslint-plugin": "^5.10.0",
     "@types/eslint": "^9.6.1",
     "@types/polyfill-library": "^3.108.4",
-    "@typescript-eslint/parser": "^8.72.0",
+    "@typescript-eslint/parser": "^8.72.1",
     "@typescript/native": "npm:typescript@^7.0.2",
-    "eslint": "^10.13.0",
-    "rimraf": "^6.1.3",
+    "eslint": "^10.14.0",
+    "rimraf": "^6.1.4",
     "typescript": "npm:@typescript/typescript6@^6.0.2",
-    "typescript-eslint": "^8.72.0",
-    "web-documentation": "^1.0.64"
+    "typescript-eslint": "^8.72.1",
+    "web-documentation": "^1.0.72"
   },
   "engines": {
     "node": ">=26",
