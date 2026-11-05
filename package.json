@@ -1,6 +1,6 @@
 {
   "name": "polyfill-bundler",
-  "version": "1.0.136",
+  "version": "1.0.137",
   "description": "Polyfill service.",
   "keywords": [
     "polyfill",
@@ -11,10 +11,12 @@
   "license": "CC-BY-3.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/thaibault/polyfill-bundler"
+    "url": "git+https://github.com/thaibault/polyfill-bundler.git"
   },
   "type": "module",
-  "bin": "index.js",
+  "bin": {
+    "polyfill-bundler": "index.js"
+  },
   "files": [
     "index.d.ts",
     "index.js"
