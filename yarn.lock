@@ -2330,6 +2330,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"core-js@npm:^3.51.0":
+  version: 3.51.0
+  resolution: "core-js@npm:3.51.0"
+  checksum: 10c0/1c10402cb9e8748c17327a68ba7a69e535d125cc81b63261506400681bdd814c6267c55fbc51fafd71d3094dcb25f5f41cc1bc5caba6a15118c73aec9653dd3b
+  languageName: node
+  linkType: hard
+
 "core-util-is@npm:~1.0.0":
   version: 1.0.3
   resolution: "core-util-is@npm:1.0.3"
@@ -3060,6 +3067,7 @@ __metadata:
     "@typescript-eslint/parser": "npm:^8.72.1"
     "@typescript/native": "npm:typescript@^7.0.2"
     clientnode: "npm:^4.0.1531"
+    core-js: "npm:^3.51.0"
     eslint: "npm:^10.14.0"
     polyfill-library: "npm:^4.8.0"
     rimraf: "npm:^6.1.4"
