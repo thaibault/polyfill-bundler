@@ -8,11 +8,10 @@
 # -------
 
 # This library written by Torben Sickert stands under a creative commons naming
-# 4.0 unported license.
+# 3.0 unported license.
 # See https://creativecommons.org/licenses/by/3.0/deed.de
 
-# Basic ArchLinux with user-mapping, AUR integration and support for decryption
-# of security related files.
+# Node.js based polyfill service serving bundles tailored to each browser.
 # endregion
 # region create commands
 # Run the following command in the directory where this file lives to build a
@@ -34,7 +33,7 @@ LABEL      org.opencontainers.image.authors='Torben Sickert <info@tsickert.com> 
 LABEL      org.opencontainers.image.url=https://github.com/thaibault/polyfill-bundler/pkgs/container/polyfill-bundler
 LABEL      org.opencontainers.image.documentation=https://github.com/thaibault/polyfill-bundler/blob/main/readme.md
 LABEL      org.opencontainers.image.source=https://github.com/thaibault/polyfill-bundler
-LABEL      org.opencontainers.image.licenses=CC-4.0
+LABEL      org.opencontainers.image.licenses=CC-BY-3.0
 LABEL      org.opencontainers.image.version=0.0.1
 
 ENV        APPLICATION_PATH=/application/
