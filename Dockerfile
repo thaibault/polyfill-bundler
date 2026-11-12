@@ -8,8 +8,8 @@
 # -------
 
 # This library written by Torben Sickert stands under a creative commons naming
-# 3.0 unported license.
-# See https://creativecommons.org/licenses/by/3.0/deed.de
+# 4.0 international license.
+# See https://creativecommons.org/licenses/by/4.0/deed.de
 
 # Node.js based polyfill service serving bundles tailored to each browser.
 # endregion
@@ -33,7 +33,7 @@ LABEL      org.opencontainers.image.authors='Torben Sickert <info@tsickert.com> 
 LABEL      org.opencontainers.image.url=https://github.com/thaibault/polyfill-bundler/pkgs/container/polyfill-bundler
 LABEL      org.opencontainers.image.documentation=https://github.com/thaibault/polyfill-bundler/blob/main/readme.md
 LABEL      org.opencontainers.image.source=https://github.com/thaibault/polyfill-bundler
-LABEL      org.opencontainers.image.licenses=CC-BY-3.0
+LABEL      org.opencontainers.image.licenses=CC-BY-4.0
 LABEL      org.opencontainers.image.version=0.0.1
 
 ENV        APPLICATION_PATH=/application/
