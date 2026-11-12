@@ -8,7 +8,7 @@
     "service"
   ],
   "homepage": "https://tsickert.com/polyfill-bundler",
-  "license": "CC-BY-3.0",
+  "license": "CC-BY-4.0",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/thaibault/polyfill-bundler.git"
