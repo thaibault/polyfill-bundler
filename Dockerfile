@@ -63,7 +63,6 @@ FROM       base AS build
 RUN        yarn unlink clientnode
 RUN        yarn install
 RUN        yarn build
-RUN        yarn unlink clientnode
 RUN        yarn workspaces focus --production
 
 FROM       base AS runtime
