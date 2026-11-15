@@ -11,7 +11,7 @@
 # See https://creativecommons.org/licenses/by/4.0/deed.de
 # endregion
 pkgname=polyfill-bundler
-pkgver=1.0.137
+pkgver=1.0.138
 pkgrel=1
 pkgdesc='Polyfill service.'
 arch=(any)

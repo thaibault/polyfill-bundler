@@ -1,6 +1,6 @@
 {
   "name": "polyfill-bundler",
-  "version": "1.0.137",
+  "version": "1.0.138",
   "description": "Polyfill service.",
   "keywords": [
     "polyfill",
@@ -14,7 +14,9 @@
     "url": "git+https://github.com/thaibault/polyfill-bundler.git"
   },
   "type": "module",
-  "bin": "index.js",
+  "bin": {
+    "polyfill-bundler": "index.js"
+  },
   "files": [
     "index.d.ts",
     "index.js"
