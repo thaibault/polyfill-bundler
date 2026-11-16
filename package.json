@@ -45,7 +45,7 @@
     "@babel/preset-env": "^8.0.7",
     "@babel/preset-typescript": "^8.0.7",
     "@eslint/js": "^10.0.1",
-    "@stylistic/eslint-plugin": "^5.10.0",
+    "@stylistic/eslint-plugin": "^6.0.1",
     "@types/eslint": "^9.6.1",
     "@types/polyfill-library": "^3.108.4",
     "@typescript-eslint/parser": "^8.72.2",
