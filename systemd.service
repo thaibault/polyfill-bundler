@@ -20,8 +20,8 @@ Conflicts=shutdown.target reboot.target halt.target
 #ExecStart=/usr/bin/env docker run --env PORT=80 --interactive --name polyfill-bundler --publish 0.0.0.0:80:80 --rm ghcr.io/thaibault/polyfill-bundler:latest
 
 # With proxy
-ExecStartPre=-/usr/bin/env docker network create proxy
-ExecStart=/usr/bin/env docker run --env PORT=80 --expose 80 --interactive --log-opt max-size=10m --name polyfill-bundler --network proxy --rm ghcr.io/thaibault/polyfill-bundler:latest
+ExecStartPre=-/usr/bin/env docker network create certbot-proxy
+ExecStart=/usr/bin/env docker run --env PORT=80 --expose 80 --interactive --log-opt max-size=10m --name polyfill-bundler --network certbot-proxy --rm ghcr.io/thaibault/polyfill-bundler:latest
 
 ExecStop=/usr/bin/env docker stop polyfill-bundler
 

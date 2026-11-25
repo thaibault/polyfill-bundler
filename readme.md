@@ -119,21 +119,22 @@ docker run --publish 8080:8080 --rm ghcr.io/thaibault/polyfill-bundler:latest
 ```
 
 For a permanent setup the repository contains "systemd.service". It starts
-the container in a Docker network named "proxy", so a reverse proxy in the
-same network can forward requests to it. Copy it to
+the container in a Docker network named "certbot-proxy", so a reverse proxy
+in the same network can forward requests to it. Copy it to
 "/etc/systemd/system/polyfill-bundler.service" and enable it:
 <!--deDE:
     Für einen dauerhaften Betrieb enthält das Repository "systemd.service".
-    Es startet den Container in einem Docker-Netzwerk namens "proxy", sodass
-    ein Reverse-Proxy im selben Netzwerk Anfragen an ihn weiterleiten kann.
-    Kopieren Sie die Datei nach
+    Es startet den Container in einem Docker-Netzwerk namens "certbot-proxy",
+    sodass ein Reverse-Proxy im selben Netzwerk Anfragen an ihn weiterleiten
+    kann. Kopieren Sie die Datei nach
     "/etc/systemd/system/polyfill-bundler.service" und aktivieren Sie sie:
 -->
 <!--frFR:
     Pour une installation permanente, le dépôt contient "systemd.service". Il
-    démarre le conteneur dans un réseau Docker nommé "proxy", afin qu'un proxy
-    inverse dans le même réseau puisse lui transmettre les requêtes. Copiez-le
-    vers "/etc/systemd/system/polyfill-bundler.service" et activez-le:
+    démarre le conteneur dans un réseau Docker nommé "certbot-proxy", afin
+    qu'un proxy inverse dans le même réseau puisse lui transmettre les
+    requêtes. Copiez-le vers
+    "/etc/systemd/system/polyfill-bundler.service" et activez-le:
 -->
 
 ```bash
