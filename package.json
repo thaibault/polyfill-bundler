@@ -14,9 +14,7 @@
     "url": "git+https://github.com/thaibault/polyfill-bundler.git"
   },
   "type": "module",
-  "bin": {
-    "polyfill-bundler": "index.js"
-  },
+  "bin": "index.js",
   "files": [
     "index.d.ts",
     "index.js"
@@ -54,7 +52,7 @@
     "rimraf": "^6.1.4",
     "typescript": "npm:@typescript/typescript6@^6.0.2",
     "typescript-eslint": "^8.74.0",
-    "web-documentation": "^1.0.77"
+    "web-documentation": "^2.0.0"
   },
   "engines": {
     "node": ">=26",
